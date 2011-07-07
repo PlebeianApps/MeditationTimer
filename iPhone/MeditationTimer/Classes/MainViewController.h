@@ -14,6 +14,8 @@
 	IBOutlet UILabel * timeLabel;
 }
 
-- (IBAction)showInfo:(id)sender;
+-(void)setupTimeLabel;
 
+- (IBAction)showInfo:(id)sender;
+-(IBAction)showAbout;
 @end

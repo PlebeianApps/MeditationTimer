@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "TimerControlViewController.h"
+#import "AboutViewController.h"
 
 @implementation MainViewController
 
@@ -32,9 +33,16 @@
 	[self setupTimeLabel];
 }
 
+-(void)showAbout;
+{
+	AboutViewController * controller = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+	controller.delegate = self;
+	[self presentModalViewController:controller animated:YES];
+	[controller release];
+}
+
 -(void)setupTimeLabel;
 {
-
 	int hours = seconds / 60 / 60;
 	int minutes = (seconds - ( hours * 60 * 60 )) / 60;
 	timeLabel.text = [NSString stringWithFormat:@"%02d:%02d",hours,minutes];

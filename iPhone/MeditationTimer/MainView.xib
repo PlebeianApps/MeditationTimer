@@ -42,6 +42,14 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="IBUIImageView" id="327963553">
+						<reference key="NSNextResponder" ref="883825266"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrameSize">{320, 480}</string>
+						<reference key="NSSuperview" ref="883825266"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
 					<object class="IBUIButton" id="303746932">
 						<reference key="NSNextResponder" ref="883825266"/>
 						<int key="NSvFlags">292</int>
@@ -105,14 +113,6 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="704382355"/>
-					</object>
-					<object class="IBUIImageView" id="327963553">
-						<reference key="NSNextResponder" ref="883825266"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{145, 88}</string>
-						<reference key="NSSuperview" ref="883825266"/>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUILabel" id="72771872">
 						<reference key="NSNextResponder" ref="883825266"/>
@@ -218,9 +218,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="303746932"/>
 							<reference ref="1034964346"/>
-							<reference ref="327963553"/>
 							<reference ref="72771872"/>
 							<reference ref="1072727838"/>
+							<reference ref="327963553"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -266,6 +266,7 @@
 					<string>40.IBPluginDependency</string>
 					<string>40.IBViewBoundsToFrameTransform</string>
 					<string>41.IBPluginDependency</string>
+					<string>41.IBViewBoundsToFrameTransform</string>
 					<string>42.CustomClassName</string>
 					<string>42.IBPluginDependency</string>
 					<string>43.CustomClassName</string>
@@ -289,6 +290,7 @@
 						<bytes key="NSTransformStruct">AULqAABD04AAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform"/>
 					<string>GrayLabel</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>NormalButton</string>

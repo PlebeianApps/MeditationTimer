@@ -127,6 +127,7 @@
 			children = (
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 			);
 			name = "Flipside View";
 			sourceTree = "<group>";
@@ -177,7 +178,6 @@
 			children = (
 				6C1BAEE813C56A2E0057318B /* volume_high.png */,
 				6C1BAEE913C56A2E0057318B /* volume_low.png */,
-				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MeditationTimer-Info.plist */,
 			);

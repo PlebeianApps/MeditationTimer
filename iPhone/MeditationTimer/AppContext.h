@@ -16,11 +16,12 @@
 @interface AppContext : BaseAppContext {
 
 	float playBackSpeed;
+	NSMutableArray * sounds;
 	
-	}
+}
 
 
-
+@property(nonatomic,retain) NSMutableArray * sounds;
 @property(nonatomic,assign) float playBackSpeed;
 
 + (AppContext *)sharedContext;

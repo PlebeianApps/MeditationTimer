@@ -13,6 +13,7 @@
 
 @synthesize playBackSpeed;
 
+@synthesize sounds;
 
 static AppContext *sharedGContext = nil;
 
@@ -89,6 +90,16 @@ static AppContext *sharedGContext = nil;
 
 - (void)initContext {
 	[super initContext];
+	self.sounds = [NSMutableArray array];
+	NSArray * homeDirectory = [[NSFileManager defaultManager] directoryContentsAtPath: [[NSBundle mainBundle] resourcePath]];
+
+	for( NSString * file in homeDirectory ){
+		if( [file rangeOfString:@".caf"].length > 0 ){
+			NSArray * parts = [file componentsSeparatedByString:@"."];
+			
+			[self.sounds addObject:[parts objectAtIndex:0]];	
+		}
+	}
 }
 
 

@@ -12,7 +12,7 @@
 @implementation FlipsideViewController
 
 @synthesize delegate;
-@synthesize durationPicker, typePicker, secondaryTimePicker;
+@synthesize durationPicker, typePicker, secondaryTimePicker, soundPicker;
 
 @synthesize firsts, seconds;
 
@@ -27,6 +27,9 @@
 		return NO;
 	} else if( textField == secondaryTime ){
 	    [self showSecondaryTimePicker];
+		return NO;
+	} else if ( textField == sound ){
+		[self showSoundPicker];
 		return NO;
 	}
 	
@@ -50,7 +53,9 @@
 		[firsts addObject:@"repeating bells"];
 		[firsts addObject:@"start and end bells"];
 
-		
+		int index = [self.firsts indexOfObject:type.text];
+		[self.typePicker selectRow:index inComponent:0 animated:YES];
+
 		UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"Bell Type" 
 														  delegate:self
 												 cancelButtonTitle:@"Done"
@@ -66,6 +71,39 @@
 		
 	}
 }
+
+-(void)showSoundPicker;
+{
+	if( self.soundPicker == nil ){
+		self.soundPicker = [[[UIPickerView alloc] initWithFrame:CGRectMake(0, 90, 320, 216)] autorelease];
+		self.soundPicker.showsSelectionIndicator = YES;
+		self.soundPicker.delegate = self;
+		
+		self.seconds = nil;
+		
+		self.firsts = [AppContext sharedContext].sounds;
+		
+		int index = [self.firsts indexOfObject:sound.text];
+		
+		[self.soundPicker selectRow:index inComponent:0 animated:YES];
+		
+		UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"Sound" 
+														  delegate:self
+												 cancelButtonTitle:@"Done"
+											destructiveButtonTitle:nil
+												 otherButtonTitles:nil];
+		
+		// Add the picker
+		[menu addSubview:soundPicker];
+		[menu showInView:self.view];        
+		[menu setBounds:CGRectMake(0,0,320, 500)];
+		
+		[menu release];
+		
+	}
+}
+
+
 
 
 
@@ -87,6 +125,13 @@
 		[seconds addObject:@"minutes"];
 		[seconds addObject:@"hours"];
 		
+		NSArray * parts = [duration.text componentsSeparatedByString:@" "];
+		NSString * first = [parts objectAtIndex:0];
+		NSString * second = [parts objectAtIndex:1];
+		
+		[self.durationPicker selectRow:[self.firsts indexOfObject:first] inComponent:0 animated:YES];
+		[self.durationPicker selectRow:[self.seconds indexOfObject:second] inComponent:1 animated:YES];
+
 		
 		UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"Duration" 
 														  delegate:self
@@ -103,6 +148,8 @@
 		
 	}
 }
+
+
 
 -(void)showSecondaryTimePicker;
 {
@@ -121,6 +168,13 @@
 		
 		[seconds addObject:@"minutes"];
 		[seconds addObject:@"hours"];
+		
+		NSArray * parts = [secondaryTime.text componentsSeparatedByString:@" "];
+		NSString * first = [parts objectAtIndex:0];
+		NSString * second = [parts objectAtIndex:1];
+		
+		[self.secondaryTimePicker selectRow:[self.firsts indexOfObject:first] inComponent:0 animated:YES];
+		[self.secondaryTimePicker selectRow:[self.seconds indexOfObject:second] inComponent:1 animated:YES];
 		
 		
 		UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"Duration" 
@@ -150,14 +204,13 @@
 		duration.text = [NSString stringWithFormat:@"%@ %@", month, year];	
 		self.durationPicker = nil;
 		
-		[AppSettings storeString:duration.text forKey:@"duration"];
 		
 		
 	} else if ( self.typePicker ){
 		NSString * month = [self.firsts objectAtIndex:[typePicker selectedRowInComponent:0]];
 		type.text = [NSString stringWithFormat:@"%@", month];		
 		self.typePicker = nil;
-		[AppSettings storeString:type.text forKey:@"type"];
+
 		
 	} else if( self.secondaryTimePicker ){
 		
@@ -166,8 +219,11 @@
 		secondaryTime.text = [NSString stringWithFormat:@"%@ %@", month, year];	
 		self.secondaryTimePicker = nil;
 		
-		[AppSettings storeString:secondaryTime.text forKey:@"secondaryTime"];
 		
+	} else if ( self.soundPicker ){
+		NSString * month = [self.firsts objectAtIndex:[soundPicker selectedRowInComponent:0]];
+		sound.text = [NSString stringWithFormat:@"%@", month];		
+		self.soundPicker = nil;
 	}
 	
 }
@@ -199,7 +255,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
+    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];   
+	
+    [self setField:sound withKey:@"sound"];
+	[self setField:duration withKey:@"duration"];
+	[self setField:secondaryTime withKey:@"secondaryTime"];
+	[self setField:type withKey:@"type"];
+	volumeSlider.value = [AppSettings getFloat:@"volume"];
+	
+}
+
+-(void)setField:(UITextField *)field withKey:(NSString *)key;
+{
+    field.text = [AppSettings getString:key];	
 }
 
 
@@ -221,14 +289,19 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+-(void)saveTouched;
+{
+	[AppSettings storeString:sound.text forKey:@"sound"];	
+	[AppSettings storeString:secondaryTime.text forKey:@"secondaryTime"];
+	[AppSettings storeString:duration.text forKey:@"duration"];
+	[AppSettings storeString:type.text forKey:@"type"];	
+	
+	[AppSettings storeFloat:volumeSlider.value forKey:@"volume"];
+	[self.delegate flipsideViewControllerDidFinish:self];	
 }
-*/
+
+
+
 
 
 - (void)dealloc {

@@ -68,7 +68,7 @@
 {
 	TimerViewController * controller = [[TimerViewController alloc] initWithNibName:@"TimerViewController" bundle:nil];
 	[self presentModalViewController:controller animated:NO];
-	[controller autorelease];
+	[controller release];
 	
 }
 

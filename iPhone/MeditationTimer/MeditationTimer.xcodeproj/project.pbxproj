@@ -60,6 +60,9 @@
 		6CFC2BA813DE765800A26034 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2B9E13DE765800A26034 /* icons */; };
 		6CFC2C4313DE80B100A26034 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */; };
 		6CFC2C4413DE80B100A26034 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2C4213DE80B100A26034 /* TimerViewController.xib */; };
+		6CFC2E3913DF21FD00A26034 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFC2E3613DF21FD00A26034 /* AVFoundation.framework */; };
+		6CFC2E3A13DF21FD00A26034 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFC2E3713DF21FD00A26034 /* CoreAudio.framework */; };
+		6CFC2E3B13DF21FD00A26034 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFC2E3813DF21FD00A26034 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +143,9 @@
 		6CFC2C4013DE80B100A26034 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		6CFC2C4113DE80B100A26034 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		6CFC2C4213DE80B100A26034 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		6CFC2E3613DF21FD00A26034 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6CFC2E3713DF21FD00A26034 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6CFC2E3813DF21FD00A26034 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* MeditationTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MeditationTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +160,9 @@
 				6CAAD79A13BC38140045A93D /* QuartzCore.framework in Frameworks */,
 				6CAAD7C813BC38BC0045A93D /* Security.framework in Frameworks */,
 				6CAAD7CA13BC38C50045A93D /* SystemConfiguration.framework in Frameworks */,
+				6CFC2E3913DF21FD00A26034 /* AVFoundation.framework in Frameworks */,
+				6CFC2E3A13DF21FD00A26034 /* CoreAudio.framework in Frameworks */,
+				6CFC2E3B13DF21FD00A26034 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +257,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CFC2E3613DF21FD00A26034 /* AVFoundation.framework */,
+				6CFC2E3713DF21FD00A26034 /* CoreAudio.framework */,
+				6CFC2E3813DF21FD00A26034 /* AudioToolbox.framework */,
 				6CAAD79913BC38140045A93D /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,

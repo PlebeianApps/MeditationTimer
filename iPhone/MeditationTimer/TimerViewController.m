@@ -12,7 +12,7 @@
 @implementation TimerViewController
 
 
-@synthesize lastCheckpoint;
+@synthesize lastCheckpoint, alarmTimes, player;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -26,24 +26,96 @@
 */
 
 
+
+- (void)dealloc {
+    [super dealloc];
+	self.alarmTimes = nil;
+	[self.player stop];
+	self.player = nil;
+}
+
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	imageView.image = [[AppContext sharedContext] getCurrentImage];
 	
 	[UIView beginAnimations:@"fade" context:nil];
-	[UIView setAnimationDuration:[[AppContext sharedContext] getCurrentDurationSeconds]];
+	[UIView setAnimationDuration:1.0];
 	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	imageView.alpha = 0.0f;
+	progressView.alpha = 0.0f;
 	[UIView commitAnimations];
 	
 	secondsLeft = [[AppContext sharedContext] getCurrentDurationSeconds];
 	totalDuration = secondsLeft;
 	
+	self.alarmTimes = [NSMutableArray array];
+	
 	[self setupTimeLabel];
 	
     [self checkpoint];					  
+	
+	if( [[AppSettings getString:@"type"] isEqual:@"repeating bells"] ){
+		[self initializeRepeatingAlarmTimes];
+	} else {
+		[self initializeGoldenAlarmTimes];
+	}
+	
 	[self recalc];
+
+}
+
+
+- (void) initializeRepeatingAlarmTimes{
+	[alarmTimes addObject:[NSNumber numberWithInt:0]];
+	
+	NSTimeInterval totalNumberOfSecondsToRunAlarm = totalDuration;
+	
+	NSNumber * finalDate = [NSNumber numberWithInt:(int)totalNumberOfSecondsToRunAlarm];
+	
+	NSTimeInterval nextSeconds = [[AppContext sharedContext] getSecondaryTimeSeconds];
+	
+	NSTimeInterval secsLeft = totalNumberOfSecondsToRunAlarm - nextSeconds;
+	NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
+	
+	while(secsLeft > 8.0){
+		int t = [[alarmTimes lastObject] intValue];
+		NSNumber * nextT = [NSNumber numberWithInt:(t + nextSeconds)];
+		
+		if( [nextT compare:finalDate] == NSOrderedDescending )
+			nextT = finalDate; 
+		
+		[alarmTimes addObject:nextT];
+		
+		secsLeft = secsLeft - nextSeconds;
+		NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
+	}
+	
+	NSLog(@" %@ ", alarmTimes);
+	
+}
+
+- (void) initializeGoldenAlarmTimes{
+	
+	[alarmTimes addObject:[NSNumber numberWithInt:0]];
+	
+	NSTimeInterval totalNumberOfSecondsToRunAlarm = totalDuration;
+	
+	float nextSeconds = totalNumberOfSecondsToRunAlarm * 0.625f;
+	float secsLeft = totalNumberOfSecondsToRunAlarm - nextSeconds;
+	NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
+	
+	while(nextSeconds > 8.0){
+		int t = [[alarmTimes lastObject] intValue];
+		NSNumber * nextT = [NSNumber numberWithInt:(t + nextSeconds)];
+		[alarmTimes addObject:nextT];
+		nextSeconds = secsLeft * 0.625f;
+		secsLeft = secsLeft - nextSeconds;
+		NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
+	}
+
+	NSLog(@" %@ ", alarmTimes);
+
 }
 
 -(void)checkpoint;
@@ -61,16 +133,42 @@
 		
 		NSTimeInterval timeSinceLastCheckPoint = [lastCheckpoint timeIntervalSinceNow];
 		totalAccumulated = totalAtLastCheckpoint + fabs(timeSinceLastCheckPoint);
+		if( alarmTimes.count > 0 ){
+		NSNumber * nextAlarm = [alarmTimes objectAtIndex:0];
+		if( totalAccumulated > [nextAlarm intValue] ){
+			[self playSound]; 
+			[self.alarmTimes removeObjectAtIndex:0];
+		}
+		}
+		
+		if( totalAccumulated >= totalDuration ){
+			[self performSelector:@selector(exitTouched) withObject:nil afterDelay:0];
+			return;
+		}
+		
 	}
-		progressView.alpha = 1.0 - totalAccumulated / totalDuration;
+		
+	imageView.alpha = 1.0 - totalAccumulated / totalDuration;
 
 		
-		NSLog(@"Time accululated %f", totalAccumulated);
+	NSLog(@"Time accululated %f", totalAccumulated);
 	
 	[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
 	[self setupTimeLabel];
 	}
 }
+
+-(void)playSound
+{
+	[self.player stop];
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] 
+                                               pathForResource:[AppSettings getString:@"sound"]
+                                               ofType:@"caf"]];
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+    [self.player play];
+  //  [click release];
+}
+
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 {
@@ -141,10 +239,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

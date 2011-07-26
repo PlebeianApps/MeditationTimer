@@ -62,6 +62,17 @@ static AppContext *sharedGContext = nil;
 }
 
 
+-(int)getCurrentDurationSeconds;
+{
+	NSString * duration = [AppSettings getString:@"duration"];
+	NSArray * parts = [duration componentsSeparatedByString:@" "];
+	NSString * numberPart = [parts objectAtIndex:0];
+	NSString * unitsPart = [parts objectAtIndex:1];
+	
+	int multiplier = ( [unitsPart isEqual:@"minutes"] ? 60 : 60 * 60 );
+	return [numberPart intValue] * multiplier;
+}
+
 
 + (AppContext *)sharedContext
 {
@@ -120,6 +131,15 @@ static AppContext *sharedGContext = nil;
 	
 }
 
+
+-(UIImage *)getCurrentImage;
+{
+	NSString * directoryPath = [[NSBundle mainBundle] pathForResource:@"images" ofType:@""];
+    int currentIndex = [AppSettings getInt:@"image"];
+	NSString * image = [self.images objectAtIndex:currentIndex];
+	return [UIImage imageWithContentsOfFile:[directoryPath stringByAppendingPathComponent:image]];
+	
+}
 
 
 

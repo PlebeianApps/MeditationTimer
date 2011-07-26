@@ -28,5 +28,7 @@
 @property(nonatomic,assign) float playBackSpeed;
 
 + (AppContext *)sharedContext;
+-(UIImage *)getCurrentImage;
+-(int)getCurrentDurationSeconds;
 
 @end

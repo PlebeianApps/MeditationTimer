@@ -58,6 +58,8 @@
 		6CFC2A8D13DE660300A26034 /* AFUIImageReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A8A13DE660300A26034 /* AFUIImageReflection.m */; };
 		6CFC2B9D13DE764F00A26034 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2B9313DE764F00A26034 /* images */; };
 		6CFC2BA813DE765800A26034 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2B9E13DE765800A26034 /* icons */; };
+		6CFC2C4313DE80B100A26034 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */; };
+		6CFC2C4413DE80B100A26034 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2C4213DE80B100A26034 /* TimerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,9 @@
 		6CFC2A8A13DE660300A26034 /* AFUIImageReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFUIImageReflection.m; sourceTree = "<group>"; };
 		6CFC2B9313DE764F00A26034 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		6CFC2B9E13DE765800A26034 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		6CFC2C4013DE80B100A26034 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		6CFC2C4113DE80B100A26034 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		6CFC2C4213DE80B100A26034 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MeditationTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MeditationTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +211,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6CFC2C3F13DE808E00A26034 /* Timer */,
 				6CFC2B9E13DE765800A26034 /* icons */,
 				6CFC2B9313DE764F00A26034 /* images */,
 				6CAAD73413BC34D60045A93D /* Base */,
@@ -318,6 +324,16 @@
 			name = AFOpenFlow;
 			sourceTree = "<group>";
 		};
+		6CFC2C3F13DE808E00A26034 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				6CFC2C4013DE80B100A26034 /* TimerViewController.h */,
+				6CFC2C4113DE80B100A26034 /* TimerViewController.m */,
+				6CFC2C4213DE80B100A26034 /* TimerViewController.xib */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +408,7 @@
 				6C59F25913D92ED70013CD96 /* push_test.caf in Resources */,
 				6CFC2B9D13DE764F00A26034 /* images in Resources */,
 				6CFC2BA813DE765800A26034 /* icons in Resources */,
+				6CFC2C4413DE80B100A26034 /* TimerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +440,7 @@
 				6CFC2A8B13DE660300A26034 /* AFCoverView.m in Sources */,
 				6CFC2A8C13DE660300A26034 /* AFOpenFlowView.m in Sources */,
 				6CFC2A8D13DE660300A26034 /* AFUIImageReflection.m in Sources */,
+				6CFC2C4313DE80B100A26034 /* TimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

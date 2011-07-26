@@ -22,13 +22,20 @@
 	[self.view addSubview:controller.view];
 	
 	[[AppContext sharedContext] addObserver:self forKeyPath:@"playBackSpeed" options:0 context:nil];
+	
+	minutes = [AppSettings getInt:@"minutes"];
+	[self setupTimeLabel];
 }
 
 - (void)observeValueForKeyPath:(NSString*) path ofObject:(id) object change:(NSDictionary*)change context:(void*)context;
 {
-	seconds += [AppContext sharedContext].playBackSpeed * 100;
-	if( seconds < 0 )
-		seconds = 0;
+	minutes += [AppContext sharedContext].playBackSpeed;
+	if( minutes < 0 )
+		minutes = 0;
+	
+	[AppSettings storeInt:minutes forKey:@"minutes"];
+	
+	[AppSettings storeString:[NSString stringWithFormat:@"%i minutes",(int)minutes] forKey:@"duration"];
 	
 	[self setupTimeLabel];
 }
@@ -43,9 +50,26 @@
 
 -(void)setupTimeLabel;
 {
-	int hours = seconds / 60 / 60;
-	int minutes = (seconds - ( hours * 60 * 60 )) / 60;
-	timeLabel.text = [NSString stringWithFormat:@"%02d:%02d",hours,minutes];
+	NSTimeInterval mins = [[AppContext sharedContext] getCurrentDurationSeconds] / 60;
+	int hours = (int)mins / 60   ;
+	int min = ((int)mins - ( hours * 60 ));
+	timeLabel.text = [NSString stringWithFormat:@"%02d:%02d",hours,min];
+}
+
+-(void)viewDidAppear:(BOOL)animated;
+{
+	[super viewDidAppear:animated];
+	minutes = [[AppContext sharedContext] getCurrentDurationSeconds] / 60;
+	[self setupTimeLabel];
+}
+
+
+-(void)startButtonTouched;
+{
+	TimerViewController * controller = [[TimerViewController alloc] initWithNibName:@"TimerViewController" bundle:nil];
+	[self presentModalViewController:controller animated:NO];
+	[controller autorelease];
+	
 }
 
 

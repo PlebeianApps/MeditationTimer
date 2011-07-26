@@ -7,10 +7,10 @@
 //
 
 #import "FlipsideViewController.h"
-
+#import "TimerViewController.h"
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
 	
-	NSTimeInterval  seconds;
+	NSTimeInterval  minutes;
 	IBOutlet UILabel * timeLabel;
 }
 
@@ -18,4 +18,5 @@
 
 - (IBAction)showInfo:(id)sender;
 -(IBAction)showAbout;
+-(IBAction)startButtonTouched;
 @end

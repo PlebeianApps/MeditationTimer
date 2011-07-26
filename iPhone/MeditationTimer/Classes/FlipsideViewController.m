@@ -346,7 +346,6 @@
 -(void)infoButtonTouched;
 {
 	InfoViewController * controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
-	controller.delegate = self;
 	[self presentModalViewController:controller animated:YES];
 	[controller release];
 }

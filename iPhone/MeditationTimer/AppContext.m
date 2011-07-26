@@ -62,7 +62,7 @@ static AppContext *sharedGContext = nil;
 }
 
 
--(int)getCurrentDurationSeconds;
+-(NSTimeInterval)getCurrentDurationSeconds;
 {
 	NSString * duration = [AppSettings getString:@"duration"];
 	NSArray * parts = [duration componentsSeparatedByString:@" "];
@@ -70,7 +70,7 @@ static AppContext *sharedGContext = nil;
 	NSString * unitsPart = [parts objectAtIndex:1];
 	
 	int multiplier = ( [unitsPart isEqual:@"minutes"] ? 60 : 60 * 60 );
-	return [numberPart intValue] * multiplier;
+	return (NSTimeInterval)[numberPart floatValue] * multiplier;
 }
 
 

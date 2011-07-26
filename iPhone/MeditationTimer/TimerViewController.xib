@@ -89,7 +89,7 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41ODQ2Nzc0MTk0AA</bytes>
 								</object>
-								<object class="NSColor" key="IBUIHighlightedColor" id="358053307">
+								<object class="NSColor" key="IBUIHighlightedColor" id="904161755">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
@@ -97,7 +97,7 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
 							</object>
-							<object class="IBUIButton" id="479955206">
+							<object class="IBUIButton" id="240921235">
 								<reference key="NSNextResponder" ref="49173749"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{7, 430}, {72, 37}}</string>
@@ -106,23 +106,24 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<object class="NSFont" key="IBUIFont" id="456496241">
+								<object class="NSFont" key="IBUIFont" id="1029197389">
 									<string key="NSName">Helvetica-Bold</string>
 									<double key="NSSize">15</double>
 									<int key="NSfFlags">16</int>
 								</object>
+								<string key="IBUISelectedTitle">Start</string>
 								<string key="IBUINormalTitle">Pause</string>
-								<reference key="IBUIHighlightedTitleColor" ref="358053307"/>
+								<reference key="IBUIHighlightedTitleColor" ref="904161755"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleShadowColor" id="270950375">
+								<object class="NSColor" key="IBUINormalTitleShadowColor" id="807487290">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
 								</object>
 							</object>
-							<object class="IBUIButton" id="293102084">
+							<object class="IBUIButton" id="376055857">
 								<reference key="NSNextResponder" ref="49173749"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{228, 430}, {72, 37}}</string>
@@ -131,14 +132,14 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<reference key="IBUIFont" ref="456496241"/>
+								<reference key="IBUIFont" ref="1029197389"/>
 								<string key="IBUINormalTitle">Exit</string>
-								<reference key="IBUIHighlightedTitleColor" ref="358053307"/>
+								<reference key="IBUIHighlightedTitleColor" ref="904161755"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<reference key="IBUINormalTitleShadowColor" ref="270950375"/>
+								<reference key="IBUINormalTitleShadowColor" ref="807487290"/>
 							</object>
 						</object>
 						<string key="NSFrameSize">{320, 480}</string>
@@ -200,7 +201,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">exitTouched</string>
-						<reference key="source" ref="293102084"/>
+						<reference key="source" ref="376055857"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -208,12 +209,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">pauseButtonTouched</string>
-						<reference key="source" ref="479955206"/>
+						<string key="label">pauseButtonTouched:</string>
+						<reference key="source" ref="240921235"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">14</int>
+					<int key="connectionID">15</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -258,8 +259,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="558673619"/>
 							<reference ref="303862504"/>
-							<reference ref="479955206"/>
-							<reference ref="293102084"/>
+							<reference ref="240921235"/>
+							<reference ref="376055857"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -275,12 +276,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="479955206"/>
+						<reference key="object" ref="240921235"/>
 						<reference key="parent" ref="49173749"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
-						<reference key="object" ref="293102084"/>
+						<reference key="object" ref="376055857"/>
 						<reference key="parent" ref="49173749"/>
 					</object>
 				</object>
@@ -308,7 +309,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>TimerViewController</string>
 					<string>UIResponder</string>
-					<string>{{307, 676}, {320, 480}}</string>
+					<string>{{713, 427}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>NormalButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -344,7 +345,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">14</int>
+			<int key="maxID">15</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -365,12 +366,12 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>exitTouched</string>
-							<string>pauseButtonTouched</string>
+							<string>pauseButtonTouched:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
-							<string>id</string>
+							<string>UIButton</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
@@ -378,7 +379,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>exitTouched</string>
-							<string>pauseButtonTouched</string>
+							<string>pauseButtonTouched:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -387,8 +388,8 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">pauseButtonTouched</string>
-								<string key="candidateClassName">id</string>
+								<string key="name">pauseButtonTouched:</string>
+								<string key="candidateClassName">UIButton</string>
 							</object>
 						</object>
 					</object>

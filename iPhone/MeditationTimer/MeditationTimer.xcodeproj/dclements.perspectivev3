@@ -278,7 +278,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>4</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -301,7 +301,7 @@
 							<real>352</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>715 145 1185 1033 0 0 1920 1178 </string>
+						<string>377 145 1185 1033 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6CFC2CEE13DE93B400A26034</string>
+										<string>6CFC2D3413DEFCF700A26034</string>
 										<key>history</key>
 										<array>
 											<string>6CAAD7D413BC39070045A93D</string>
@@ -370,20 +370,20 @@
 											<string>6CFC2C1213DE7C2000A26034</string>
 											<string>6CFC2C2A13DE7D7400A26034</string>
 											<string>6CFC2C4813DE861000A26034</string>
-											<string>6CFC2C4913DE861000A26034</string>
 											<string>6CFC2C4A13DE861000A26034</string>
 											<string>6CFC2C4B13DE861000A26034</string>
 											<string>6CFC2C4C13DE861000A26034</string>
 											<string>6CFC2C4D13DE861000A26034</string>
 											<string>6CFC2C4E13DE861000A26034</string>
 											<string>6CFC2C5113DE861000A26034</string>
-											<string>6CFC2C5813DE887A00A26034</string>
 											<string>6CFC2C9F13DE8D4A00A26034</string>
-											<string>6CFC2CCA13DE8FB000A26034</string>
-											<string>6CFC2CD013DE901100A26034</string>
-											<string>6CFC2CD413DE904400A26034</string>
-											<string>6CFC2CE813DE935100A26034</string>
-											<string>6CFC2CE913DE935100A26034</string>
+											<string>6CFC2CFA13DEFAC100A26034</string>
+											<string>6CFC2CFB13DEFAC100A26034</string>
+											<string>6CFC2CFC13DEFAC100A26034</string>
+											<string>6CFC2CFD13DEFAC100A26034</string>
+											<string>6CFC2D0313DEFAF200A26034</string>
+											<string>6CFC2D2913DEFC6800A26034</string>
+											<string>6CFC2D2A13DEFC6800A26034</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -399,7 +399,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {811, 725}}</string>
 								<key>RubberWindowFrame</key>
-								<string>715 145 1185 1033 0 0 1920 1178 </string>
+								<string>377 145 1185 1033 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -423,8 +423,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {811, 235}}</string>
-										<key>RubberWindowFrame</key>
-										<string>715 145 1185 1033 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -479,6 +477,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {811, 235}}</string>
+										<key>RubberWindowFrame</key>
+										<string>377 145 1185 1033 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -700,14 +700,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6CFC2CEF13DE93B400A26034</string>
+		<string>6CFC2D3513DEFCF700A26034</string>
 		<string>6CAAD7E413BC39070045A93D</string>
 		<string>6CFC2B2913DE6CD100A26034</string>
 		<string>6CFC2B2A13DE6CD100A26034</string>
 		<string>/Users/dclements/workspace/clients/plebs/MeditationTimer/iPhone/MeditationTimer/MeditationTimer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>715 145 1185 1033 0 0 1920 1178 </string>
+	<string>377 145 1185 1033 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

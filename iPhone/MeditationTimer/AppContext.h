@@ -29,6 +29,6 @@
 
 + (AppContext *)sharedContext;
 -(UIImage *)getCurrentImage;
--(int)getCurrentDurationSeconds;
+-(NSTimeInterval)getCurrentDurationSeconds;
 
 @end

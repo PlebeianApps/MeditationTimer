@@ -15,16 +15,23 @@
 	IBOutlet UIView * progressView;
 	IBOutlet UIImageView * imageView;
 	
-	int secondsLeft;
+	NSTimeInterval secondsLeft;
 	
-	int totalDuration;
+	NSTimeInterval totalDuration;
+	NSTimeInterval totalAccumulated;
+	
+	NSDate * lastCheckpoint;
+	NSTimeInterval totalAtLastCheckpoint;
+	
 	BOOL pausing;
-	NSDate * startDate;
 }
 
-@property(nonatomic,retain) NSDate * startDate;
+@property(nonatomic,retain) NSDate * lastCheckpoint;
 
--(IBAction)pauseButtonTouched;
+-(IBAction)pauseButtonTouched:(UIButton *)pauseButton;
 -(IBAction)exitTouched;
+-(void)checkpoint;
+-(void)setupTimeLabel;
+-(void)recalc;
 
 @end

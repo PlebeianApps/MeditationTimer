@@ -12,7 +12,7 @@
 @implementation TimerViewController
 
 
-@synthesize startDate;
+@synthesize lastCheckpoint;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -42,15 +42,34 @@
 	
 	[self setupTimeLabel];
 	
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:1.0];
-	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	progressView.alpha = 0.0f;
-	[UIView commitAnimations];
+    [self checkpoint];					  
+	[self recalc];
+}
+
+-(void)checkpoint;
+{
+	@synchronized(self){
+		totalAtLastCheckpoint = totalAccumulated;
+		self.lastCheckpoint = [NSDate date];
+	}
+}
+
+-(void)recalc;
+{
+	@synchronized(self){
+	if( !pausing ){
+		
+		NSTimeInterval timeSinceLastCheckPoint = [lastCheckpoint timeIntervalSinceNow];
+		totalAccumulated = totalAtLastCheckpoint + fabs(timeSinceLastCheckPoint);
+	}
+		progressView.alpha = 1.0 - totalAccumulated / totalDuration;
+
+		
+		NSLog(@"Time accululated %f", totalAccumulated);
 	
-	self.startDate = [NSDate date];
-					  
-	
+	[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
+	[self setupTimeLabel];
+	}
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
@@ -64,31 +83,34 @@
 
 -(void)setupTimeLabel;
 {
+	
+	secondsLeft = totalDuration - totalAccumulated;
+	
 	int minutes = secondsLeft / 60;
 	int hours = minutes / 60   ;
 	int min = (minutes - ( hours * 60 ));
+	int secs = (int)secondsLeft % 60;
 	
-	if( secondsLeft > 0 ){
-		if( minutes == 0 ){
-			minutes = 1;	
-		}
-	}
+	if( hours == 0 ){
+		hours = min;
+	    min = secs;	
+	} 
+
+	
 	
 	timeLeft.text = [NSString stringWithFormat:@"%02d:%02d",hours,min];
 }
 
--(void)pauseButtonTouched;
+-(void)pauseButtonTouched:(UIButton *)pauseButton;
 {
 	//reset duration
 	pausing = !pausing;
+	pauseButton.selected = !pauseButton.selected;
 	
 	if( pausing ){
-		int timeThatPassed = abs((int)[startDate timeIntervalSinceNow]);
-		totalDuration = (totalDuration - timeThatPassed);
-		secondsLeft = totalDuration;
-		[self setupTimeLabel];
-	} else {
 		
+	} else {
+		[self checkpoint];
 	}
 }
 

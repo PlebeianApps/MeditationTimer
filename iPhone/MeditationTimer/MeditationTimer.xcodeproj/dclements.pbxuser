@@ -29,9 +29,9 @@
 	};
 	289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {992, 1534}}";
-			sepNavSelRange = "{1872, 0}";
-			sepNavVisRange = "{1231, 1366}";
+			sepNavIntBoundsRect = "{{0, 0}, {992, 1521}}";
+			sepNavSelRange = "{1644, 0}";
+			sepNavVisRange = "{1103, 1444}";
 		};
 	};
 	289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {
@@ -43,7 +43,7 @@
 	};
 	289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1124, 4745}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 4823}}";
 			sepNavSelRange = "{7690, 0}";
 			sepNavVisRange = "{6643, 898}";
 		};
@@ -62,10 +62,10 @@
 			6CFC2C0B13DE7BEF00A26034 /* FlipsideViewController.m:292 */,
 			6CFC2C1813DE7C5300A26034 /* FlipsideViewController.m:343 */,
 			6CFC2C9D13DE8D4900A26034 /* TimerViewController.m:34 */,
-			6CFC2CA713DE8D7C00A26034 /* TimerViewController.m:67 */,
+			6CFC2CA713DE8D7C00A26034 /* TimerViewController.m:102 */,
 			6CFC2CAB13DE8D9700A26034 /* AppContext.m:67 */,
 			6CFC2CBA13DE8ED600A26034 /* AppContext.m:68 */,
-			6CFC2CDD13DE918A00A26034 /* TimerViewController.m:58 */,
+			6CFC2CDD13DE918A00A26034 /* TimerViewController.m:77 */,
 		);
 		codeSenseManager = 6CAAD71913BC340F0045A93D /* Code sense */;
 		executables = (
@@ -392,6 +392,36 @@
 			6CFC2CE913DE935100A26034 /* PBXTextBookmark */ = 6CFC2CE913DE935100A26034 /* PBXTextBookmark */;
 			6CFC2CEA13DE935100A26034 /* PBXTextBookmark */ = 6CFC2CEA13DE935100A26034 /* PBXTextBookmark */;
 			6CFC2CEE13DE93B400A26034 /* PBXTextBookmark */ = 6CFC2CEE13DE93B400A26034 /* PBXTextBookmark */;
+			6CFC2CF813DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CF813DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CF913DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CF913DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFA13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFA13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFB13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFB13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFC13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFC13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFD13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFD13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFE13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFE13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2CFF13DEFAC100A26034 /* PBXTextBookmark */ = 6CFC2CFF13DEFAC100A26034 /* PBXTextBookmark */;
+			6CFC2D0313DEFAF200A26034 /* PBXTextBookmark */ = 6CFC2D0313DEFAF200A26034 /* PBXTextBookmark */;
+			6CFC2D0413DEFAF200A26034 /* PBXTextBookmark */ = 6CFC2D0413DEFAF200A26034 /* PBXTextBookmark */;
+			6CFC2D0513DEFAF200A26034 /* PBXTextBookmark */ = 6CFC2D0513DEFAF200A26034 /* PBXTextBookmark */;
+			6CFC2D0A13DEFB0200A26034 /* PBXTextBookmark */ = 6CFC2D0A13DEFB0200A26034 /* PBXTextBookmark */;
+			6CFC2D0C13DEFB0A00A26034 /* PBXTextBookmark */ = 6CFC2D0C13DEFB0A00A26034 /* PBXTextBookmark */;
+			6CFC2D0D13DEFB1A00A26034 /* PBXTextBookmark */ = 6CFC2D0D13DEFB1A00A26034 /* PBXTextBookmark */;
+			6CFC2D0E13DEFB4400A26034 /* PBXTextBookmark */ = 6CFC2D0E13DEFB4400A26034 /* PBXTextBookmark */;
+			6CFC2D0F13DEFB4400A26034 /* PBXTextBookmark */ = 6CFC2D0F13DEFB4400A26034 /* PBXTextBookmark */;
+			6CFC2D1213DEFB7500A26034 /* PBXTextBookmark */ = 6CFC2D1213DEFB7500A26034 /* PBXTextBookmark */;
+			6CFC2D1413DEFB7F00A26034 /* PBXTextBookmark */ = 6CFC2D1413DEFB7F00A26034 /* PBXTextBookmark */;
+			6CFC2D1513DEFB8200A26034 /* PBXTextBookmark */ = 6CFC2D1513DEFB8200A26034 /* PBXTextBookmark */;
+			6CFC2D1613DEFB8B00A26034 /* PBXTextBookmark */ = 6CFC2D1613DEFB8B00A26034 /* PBXTextBookmark */;
+			6CFC2D1713DEFBC800A26034 /* PBXTextBookmark */ = 6CFC2D1713DEFBC800A26034 /* PBXTextBookmark */;
+			6CFC2D1813DEFBD700A26034 /* PBXTextBookmark */ = 6CFC2D1813DEFBD700A26034 /* PBXTextBookmark */;
+			6CFC2D1F13DEFBF000A26034 /* PBXTextBookmark */ = 6CFC2D1F13DEFBF000A26034 /* PBXTextBookmark */;
+			6CFC2D2413DEFC2700A26034 /* PBXTextBookmark */ = 6CFC2D2413DEFC2700A26034 /* PBXTextBookmark */;
+			6CFC2D2613DEFC5300A26034 /* PBXTextBookmark */ = 6CFC2D2613DEFC5300A26034 /* PBXTextBookmark */;
+			6CFC2D2913DEFC6800A26034 /* PBXTextBookmark */ = 6CFC2D2913DEFC6800A26034 /* PBXTextBookmark */;
+			6CFC2D2A13DEFC6800A26034 /* PBXTextBookmark */ = 6CFC2D2A13DEFC6800A26034 /* PBXTextBookmark */;
+			6CFC2D2B13DEFC6800A26034 /* PBXTextBookmark */ = 6CFC2D2B13DEFC6800A26034 /* PBXTextBookmark */;
+			6CFC2D3013DEFCC500A26034 /* PBXTextBookmark */ = 6CFC2D3013DEFCC500A26034 /* PBXTextBookmark */;
+			6CFC2D3413DEFCF700A26034 /* PBXTextBookmark */ = 6CFC2D3413DEFCF700A26034 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 6CAAD71813BC340F0045A93D /* Source Control */;
 		userBuildSettings = {
@@ -554,7 +584,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 82";
 		rLen = 0;
-		rLoc = 3168;
+		rLoc = 3197;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 2606;
@@ -620,7 +650,7 @@
 		ignoreCount = 0;
 		lineNumber = 214;
 		location = MeditationTimer;
-		modificationTime = 333353810.686397;
+		modificationTime = 333380806.829091;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -859,15 +889,15 @@
 	6CAAD7FB13BC3B890045A93D /* AppContext.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {750, 645}}";
-			sepNavSelRange = "{668, 0}";
-			sepNavVisRange = "{0, 674}";
+			sepNavSelRange = "{635, 0}";
+			sepNavVisRange = "{0, 685}";
 		};
 	};
 	6CAAD7FC13BC3B890045A93D /* AppContext.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1272, 1924}}";
-			sepNavSelRange = "{2556, 0}";
-			sepNavVisRange = "{1765, 1548}";
+			sepNavSelRange = "{2461, 44}";
+			sepNavVisRange = "{1700, 1640}";
 		};
 	};
 	6CAAD81713BC3DA90045A93D /* PBXTextBookmark */ = {
@@ -1203,7 +1233,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 309";
 		rLen = 0;
-		rLoc = 9980;
+		rLoc = 9951;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 7897;
@@ -1302,7 +1332,7 @@
 		ignoreCount = 0;
 		lineNumber = 283;
 		location = MeditationTimer;
-		modificationTime = 333353810.687227;
+		modificationTime = 333380806.829801;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1351,7 +1381,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 346";
 		rLen = 19;
-		rLoc = 10188;
+		rLoc = 10159;
 		rType = 0;
 		vrLen = 723;
 		vrLoc = 9380;
@@ -1687,7 +1717,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 109";
 		rLen = 0;
-		rLoc = 4459;
+		rLoc = 4488;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 2485;
@@ -1697,7 +1727,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 101";
 		rLen = 0;
-		rLoc = 3735;
+		rLoc = 3764;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 2455;
@@ -1764,7 +1794,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 109";
 		rLen = 0;
-		rLoc = 4099;
+		rLoc = 4128;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 2485;
@@ -1804,7 +1834,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 109";
 		rLen = 0;
-		rLoc = 4099;
+		rLoc = 4128;
 		rType = 0;
 		vrLen = 1285;
 		vrLoc = 2453;
@@ -1814,7 +1844,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 111";
 		rLen = 0;
-		rLoc = 4459;
+		rLoc = 4488;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 2485;
@@ -1864,7 +1894,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 114";
 		rLen = 0;
-		rLoc = 4233;
+		rLoc = 4262;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 2622;
@@ -1874,7 +1904,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 118";
 		rLen = 0;
-		rLoc = 4459;
+		rLoc = 4488;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 2620;
@@ -1884,7 +1914,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 109";
 		rLen = 17;
-		rLoc = 4068;
+		rLoc = 4097;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 2620;
@@ -1903,7 +1933,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 115";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4377;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 2620;
@@ -1913,7 +1943,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 115";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4377;
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 2617;
@@ -1953,7 +1983,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 117";
 		rLen = 0;
-		rLoc = 4355;
+		rLoc = 4384;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 2684;
@@ -1992,7 +2022,7 @@
 		ignoreCount = 0;
 		lineNumber = 294;
 		location = MeditationTimer;
-		modificationTime = 333353810.687574;
+		modificationTime = 333380806.830042;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2206,7 +2236,7 @@
 		ignoreCount = 0;
 		lineNumber = 292;
 		location = MeditationTimer;
-		modificationTime = 333353810.687948;
+		modificationTime = 333380806.830259;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2291,7 +2321,7 @@
 		ignoreCount = 0;
 		lineNumber = 343;
 		location = MeditationTimer;
-		modificationTime = 333353810.688516;
+		modificationTime = 333380806.830673;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2320,7 +2350,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 373";
 		rLen = 0;
-		rLoc = 10612;
+		rLoc = 10583;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 9201;
@@ -2330,7 +2360,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 373";
 		rLen = 0;
-		rLoc = 10612;
+		rLoc = 10583;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 9201;
@@ -2380,7 +2410,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 348";
 		rLen = 0;
-		rLoc = 9936;
+		rLoc = 9907;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 8902;
@@ -2420,7 +2450,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 348";
 		rLen = 0;
-		rLoc = 9936;
+		rLoc = 9907;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 8901;
@@ -2438,15 +2468,15 @@
 	6CFC2C4013DE80B100A26034 /* TimerViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {750, 645}}";
-			sepNavSelRange = "{390, 0}";
-			sepNavVisRange = "{0, 525}";
+			sepNavSelRange = "{583, 0}";
+			sepNavVisRange = "{0, 715}";
 		};
 	};
 	6CFC2C4113DE80B100A26034 /* TimerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1677}}";
-			sepNavSelRange = "{1837, 0}";
-			sepNavVisRange = "{1425, 847}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1937}}";
+			sepNavSelRange = "{2310, 0}";
+			sepNavVisRange = "{1479, 1078}";
 		};
 	};
 	6CFC2C4813DE861000A26034 /* PBXTextBookmark */ = {
@@ -2500,7 +2530,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 20";
 		rLen = 0;
-		rLoc = 525;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 342;
 		vrLoc = 0;
@@ -2530,7 +2560,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 32";
 		rLen = 13;
-		rLoc = 950;
+		rLoc = 955;
 		rType = 0;
 		vrLen = 1484;
 		vrLoc = 0;
@@ -2547,7 +2577,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 69";
 		rLen = 0;
-		rLoc = 2833;
+		rLoc = 2862;
 		rType = 0;
 		vrLen = 1600;
 		vrLoc = 1436;
@@ -2557,7 +2587,7 @@
 		fRef = 6CAAD7FB13BC3B890045A93D /* AppContext.h */;
 		name = "AppContext.h: 33";
 		rLen = 0;
-		rLoc = 668;
+		rLoc = 679;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 0;
@@ -2567,7 +2597,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 75";
 		rLen = 0;
-		rLoc = 2836;
+		rLoc = 2865;
 		rType = 0;
 		vrLen = 1676;
 		vrLoc = 1442;
@@ -2577,7 +2607,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 33";
 		rLen = 0;
-		rLoc = 1049;
+		rLoc = 1054;
 		rType = 0;
 		vrLen = 1508;
 		vrLoc = 0;
@@ -2627,7 +2657,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 55";
 		rLen = 19;
-		rLoc = 1931;
+		rLoc = 1943;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 665;
@@ -2647,7 +2677,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 20";
 		rLen = 0;
-		rLoc = 525;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 342;
 		vrLoc = 0;
@@ -2704,7 +2734,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 22";
 		rLen = 0;
-		rLoc = 524;
+		rLoc = 714;
 		rType = 0;
 		vrLen = 398;
 		vrLoc = 0;
@@ -2714,7 +2744,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 29";
 		rLen = 0;
-		rLoc = 827;
+		rLoc = 832;
 		rType = 0;
 		vrLen = 1572;
 		vrLoc = 3;
@@ -2724,7 +2754,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 45";
 		rLen = 0;
-		rLoc = 2268;
+		rLoc = 2652;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 3;
@@ -2743,7 +2773,7 @@
 		isa = PBXTextBookmark;
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 65";
-		rLen = 33;
+		rLen = 44;
 		rLoc = 2461;
 		rType = 0;
 		vrLen = 1676;
@@ -2754,7 +2784,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 32";
 		rLen = 25;
-		rLoc = 965;
+		rLoc = 970;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 0;
@@ -2763,7 +2793,7 @@
 		isa = PBXTextBookmark;
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 49";
-		rLen = 241;
+		rLen = 253;
 		rLoc = 1486;
 		rType = 0;
 		vrLen = 1314;
@@ -2794,7 +2824,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 72";
 		rLen = 10;
-		rLoc = 2726;
+		rLoc = 2737;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 1436;
@@ -2804,7 +2834,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 18";
 		rLen = 0;
-		rLoc = 352;
+		rLoc = 363;
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 0;
@@ -2814,7 +2844,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 37";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1284;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 0;
@@ -2824,7 +2854,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 37";
 		rLen = 0;
-		rLoc = 1207;
+		rLoc = 1212;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 620;
@@ -2843,7 +2873,7 @@
 		ignoreCount = 0;
 		lineNumber = 34;
 		location = MeditationTimer;
-		modificationTime = 333353810.688839;
+		modificationTime = 333380806.830915;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2862,7 +2892,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 37";
 		rLen = 0;
-		rLoc = 1207;
+		rLoc = 1212;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 0;
@@ -2872,7 +2902,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 37";
 		rLen = 0;
-		rLoc = 1207;
+		rLoc = 1212;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 0;
@@ -2882,7 +2912,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 38";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 52;
@@ -2892,12 +2922,12 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 38";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 52;
 	};
-	6CFC2CA713DE8D7C00A26034 /* TimerViewController.m:67 */ = {
+	6CFC2CA713DE8D7C00A26034 /* TimerViewController.m:102 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2909,9 +2939,9 @@
 		functionName = "-setupTimeLabel";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 67;
+		lineNumber = 102;
 		location = MeditationTimer;
-		modificationTime = 333353810.689254;
+		modificationTime = 333380806.831516;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2920,7 +2950,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 38";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 52;
@@ -2930,7 +2960,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 38";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 52;
@@ -2949,7 +2979,7 @@
 		ignoreCount = 0;
 		lineNumber = 67;
 		location = MeditationTimer;
-		modificationTime = 333353810.689717;
+		modificationTime = 333380806.831867;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2958,7 +2988,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 37";
 		rLen = 25;
-		rLoc = 1148;
+		rLoc = 1153;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 52;
@@ -2968,7 +2998,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 75";
 		rLen = 0;
-		rLoc = 2836;
+		rLoc = 2865;
 		rType = 0;
 		vrLen = 1722;
 		vrLoc = 1444;
@@ -2978,7 +3008,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 75";
 		rLen = 0;
-		rLoc = 2836;
+		rLoc = 2865;
 		rType = 0;
 		vrLen = 1722;
 		vrLoc = 1444;
@@ -2988,7 +3018,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 67";
 		rLen = 0;
-		rLoc = 2496;
+		rLoc = 2507;
 		rType = 0;
 		vrLen = 1795;
 		vrLoc = 1447;
@@ -2997,8 +3027,8 @@
 		isa = PBXTextBookmark;
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 44";
-		rLen = 244;
-		rLoc = 1672;
+		rLen = 0;
+		rLoc = 2384;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 49;
@@ -3018,7 +3048,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 53";
 		rLen = 0;
-		rLoc = 1580;
+		rLoc = 1588;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 763;
@@ -3028,7 +3058,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 53";
 		rLen = 0;
-		rLoc = 1580;
+		rLoc = 1588;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 763;
@@ -3045,7 +3075,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 67";
 		rLen = 0;
-		rLoc = 2496;
+		rLoc = 2507;
 		rType = 0;
 		vrLen = 1795;
 		vrLoc = 1447;
@@ -3064,7 +3094,7 @@
 		ignoreCount = 0;
 		lineNumber = 68;
 		location = MeditationTimer;
-		modificationTime = 333353810.689955;
+		modificationTime = 333380806.832229;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3073,7 +3103,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 67";
 		rLen = 0;
-		rLoc = 2496;
+		rLoc = 2507;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 1765;
@@ -3083,7 +3113,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 67";
 		rLen = 0;
-		rLoc = 2496;
+		rLoc = 2507;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1765;
@@ -3093,7 +3123,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 67";
 		rLen = 0;
-		rLoc = 2496;
+		rLoc = 2507;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 1765;
@@ -3150,7 +3180,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 68";
 		rLen = 0;
-		rLoc = 2556;
+		rLoc = 2567;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1765;
@@ -3160,7 +3190,7 @@
 		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
 		name = "AppContext.m: 68";
 		rLen = 0;
-		rLoc = 2556;
+		rLoc = 2567;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1765;
@@ -3180,7 +3210,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 62";
 		rLen = 0;
-		rLoc = 1896;
+		rLoc = 1908;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 1103;
@@ -3200,7 +3230,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 62";
 		rLen = 0;
-		rLoc = 1872;
+		rLoc = 1884;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 1103;
@@ -3210,7 +3240,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 62";
 		rLen = 0;
-		rLoc = 1872;
+		rLoc = 1884;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 1231;
@@ -3220,7 +3250,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 62";
 		rLen = 0;
-		rLoc = 1872;
+		rLoc = 1884;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 1231;
@@ -3229,7 +3259,7 @@
 		isa = PBXTextBookmark;
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		rLen = 0;
-		rLoc = 66;
+		rLoc = 101;
 		rType = 1;
 	};
 	6CFC2CD613DE904400A26034 /* PBXTextBookmark */ = {
@@ -3237,7 +3267,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 44";
 		rLen = 0;
-		rLoc = 1672;
+		rLoc = 2384;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 49;
@@ -3247,7 +3277,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 18";
 		rLen = 0;
-		rLoc = 352;
+		rLoc = 363;
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 0;
@@ -3257,7 +3287,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 44";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 1492;
 		vrLoc = 153;
@@ -3267,12 +3297,12 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 51";
 		rLen = 0;
-		rLoc = 1600;
+		rLoc = 1990;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 156;
 	};
-	6CFC2CDD13DE918A00A26034 /* TimerViewController.m:58 */ = {
+	6CFC2CDD13DE918A00A26034 /* TimerViewController.m:77 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3284,9 +3314,9 @@
 		functionName = "-touchesEnded:withEvent:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 58;
+		lineNumber = 77;
 		location = MeditationTimer;
-		modificationTime = 333353810.69037;
+		modificationTime = 333380806.832435;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3295,7 +3325,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 51";
 		rLen = 0;
-		rLoc = 1600;
+		rLoc = 1990;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 156;
@@ -3305,7 +3335,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 51";
 		rLen = 0;
-		rLoc = 1600;
+		rLoc = 1990;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 156;
@@ -3315,7 +3345,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 53";
 		rLen = 0;
-		rLoc = 1638;
+		rLoc = 2028;
 		rType = 0;
 		vrLen = 1442;
 		vrLoc = 189;
@@ -3325,7 +3355,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 48";
 		rLen = 1;
-		rLoc = 1473;
+		rLoc = 1863;
 		rType = 0;
 		vrLen = 1442;
 		vrLoc = 189;
@@ -3335,7 +3365,7 @@
 		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
 		name = "TimerViewController.h: 21";
 		rLen = 0;
-		rLoc = 390;
+		rLoc = 515;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 0;
@@ -3345,7 +3375,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 75";
 		rLen = 0;
-		rLoc = 2196;
+		rLoc = 2580;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1277;
@@ -3355,7 +3385,7 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 84";
 		rLen = 0;
-		rLoc = 2193;
+		rLoc = 2577;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 1369;
@@ -3365,9 +3395,309 @@
 		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
 		name = "TimerViewController.m: 73";
 		rLen = 0;
-		rLoc = 1837;
+		rLoc = 2384;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 1425;
+	};
+	6CFC2CF813DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
+		name = "TimerViewController.h: 36";
+		rLen = 0;
+		rLoc = 709;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	6CFC2CF913DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 63";
+		rLen = 15;
+		rLoc = 1420;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 1110;
+	};
+	6CFC2CFA13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */;
+		name = "AppContext.m: 65";
+		rLen = 44;
+		rLoc = 2461;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 1700;
+	};
+	6CFC2CFB13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CAAD7FB13BC3B890045A93D /* AppContext.h */;
+		name = "AppContext.h: 32";
+		rLen = 0;
+		rLoc = 635;
+		rType = 0;
+		vrLen = 685;
+		vrLoc = 0;
+	};
+	6CFC2CFC13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 349";
+		rLen = 0;
+		rLoc = 9823;
+		rType = 0;
+		vrLen = 1273;
+		vrLoc = 8842;
+	};
+	6CFC2CFD13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A80DB2D0DB0083E9F9 /* MainViewController.h */;
+		name = "MainViewController.h: 21";
+		rLen = 18;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 484;
+		vrLoc = 0;
+	};
+	6CFC2CFE13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 53";
+		rLen = 14;
+		rLoc = 1512;
+		rType = 0;
+		vrLen = 1361;
+		vrLoc = 1101;
+	};
+	6CFC2CFF13DEFAC100A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 55";
+		rLen = 0;
+		rLoc = 1644;
+		rType = 0;
+		vrLen = 1444;
+		vrLoc = 1103;
+	};
+	6CFC2D0313DEFAF200A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 55";
+		rLen = 0;
+		rLoc = 1644;
+		rType = 0;
+		vrLen = 1444;
+		vrLoc = 1103;
+	};
+	6CFC2D0413DEFAF200A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 63";
+		rLen = 15;
+		rLoc = 1420;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 1110;
+	};
+	6CFC2D0513DEFAF200A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1757;
+		rType = 0;
+		vrLen = 1013;
+		vrLoc = 1181;
+	};
+	6CFC2D0A13DEFB0200A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1716;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 1213;
+	};
+	6CFC2D0C13DEFB0A00A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1716;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 1213;
+	};
+	6CFC2D0D13DEFB1A00A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1716;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 1213;
+	};
+	6CFC2D0E13DEFB4400A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 268";
+		rLen = 0;
+		rLoc = 7690;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 6643;
+	};
+	6CFC2D0F13DEFB4400A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1716;
+		rType = 0;
+		vrLen = 467;
+		vrLoc = 2915;
+	};
+	6CFC2D1213DEFB7500A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 44";
+		rLen = 0;
+		rLoc = 1238;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 1055;
+	};
+	6CFC2D1413DEFB7F00A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 44";
+		rLen = 0;
+		rLoc = 1238;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 1055;
+	};
+	6CFC2D1513DEFB8200A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 44";
+		rLen = 0;
+		rLoc = 1238;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 1055;
+	};
+	6CFC2D1613DEFB8B00A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 44";
+		rLen = 0;
+		rLoc = 1238;
+		rType = 0;
+		vrLen = 552;
+		vrLoc = 1561;
+	};
+	6CFC2D1713DEFBC800A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 95";
+		rLen = 0;
+		rLoc = 2384;
+		rType = 0;
+		vrLen = 848;
+		vrLoc = 1703;
+	};
+	6CFC2D1813DEFBD700A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 73";
+		rLen = 0;
+		rLoc = 1861;
+		rType = 0;
+		vrLen = 411;
+		vrLoc = 2031;
+	};
+	6CFC2D1F13DEFBF000A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 92";
+		rLen = 0;
+		rLoc = 2384;
+		rType = 0;
+		vrLen = 854;
+		vrLoc = 1707;
+	};
+	6CFC2D2413DEFC2700A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 103";
+		rLen = 0;
+		rLoc = 2525;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 1964;
+	};
+	6CFC2D2613DEFC5300A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 104";
+		rLen = 0;
+		rLoc = 2525;
+		rType = 0;
+		vrLen = 1051;
+		vrLoc = 2003;
+	};
+	6CFC2D2913DEFC6800A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4013DE80B100A26034 /* TimerViewController.h */;
+		name = "TimerViewController.h: 31";
+		rLen = 0;
+		rLoc = 583;
+		rType = 0;
+		vrLen = 715;
+		vrLoc = 0;
+	};
+	6CFC2D2A13DEFC6800A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 100";
+		rLen = 51;
+		rLoc = 2387;
+		rType = 0;
+		vrLen = 1051;
+		vrLoc = 2003;
+	};
+	6CFC2D2B13DEFC6800A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 100";
+		rLen = 51;
+		rLoc = 2387;
+		rType = 0;
+		vrLen = 1051;
+		vrLoc = 2003;
+	};
+	6CFC2D3013DEFCC500A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 95";
+		rLen = 0;
+		rLoc = 2384;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 1459;
+	};
+	6CFC2D3413DEFCF700A26034 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6CFC2C4113DE80B100A26034 /* TimerViewController.m */;
+		name = "TimerViewController.m: 98";
+		rLen = 0;
+		rLoc = 2310;
+		rType = 0;
+		vrLen = 1078;
+		vrLoc = 1479;
 	};
 }

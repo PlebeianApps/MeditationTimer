@@ -51,6 +51,13 @@
 		6CAAD7CA13BC38C50045A93D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD7C913BC38C50045A93D /* SystemConfiguration.framework */; };
 		6CAAD7FA13BC3B6F0045A93D /* BaseAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAD7F913BC3B6F0045A93D /* BaseAppContext.m */; };
 		6CAAD7FD13BC3B890045A93D /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAD7FC13BC3B890045A93D /* AppContext.m */; };
+		6CFC2A7813DE65DE00A26034 /* UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A7713DE65DE00A26034 /* UIImageExtras.m */; };
+		6CFC2A8213DE65FD00A26034 /* AFGetImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A8113DE65FD00A26034 /* AFGetImageOperation.m */; };
+		6CFC2A8B13DE660300A26034 /* AFCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A8613DE660300A26034 /* AFCoverView.m */; };
+		6CFC2A8C13DE660300A26034 /* AFOpenFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A8813DE660300A26034 /* AFOpenFlowView.m */; };
+		6CFC2A8D13DE660300A26034 /* AFUIImageReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC2A8A13DE660300A26034 /* AFUIImageReflection.m */; };
+		6CFC2B9D13DE764F00A26034 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2B9313DE764F00A26034 /* images */; };
+		6CFC2BA813DE765800A26034 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC2B9E13DE765800A26034 /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +122,19 @@
 		6CAAD7F913BC3B6F0045A93D /* BaseAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAppContext.m; sourceTree = "<group>"; };
 		6CAAD7FB13BC3B890045A93D /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
 		6CAAD7FC13BC3B890045A93D /* AppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppContext.m; sourceTree = "<group>"; };
+		6CFC2A7613DE65DE00A26034 /* UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtras.h; sourceTree = "<group>"; };
+		6CFC2A7713DE65DE00A26034 /* UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtras.m; sourceTree = "<group>"; };
+		6CFC2A8013DE65FD00A26034 /* AFGetImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFGetImageOperation.h; sourceTree = "<group>"; };
+		6CFC2A8113DE65FD00A26034 /* AFGetImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFGetImageOperation.m; sourceTree = "<group>"; };
+		6CFC2A8413DE660300A26034 /* AFOpenFlowConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOpenFlowConstants.h; sourceTree = "<group>"; };
+		6CFC2A8513DE660300A26034 /* AFCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCoverView.h; sourceTree = "<group>"; };
+		6CFC2A8613DE660300A26034 /* AFCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFCoverView.m; sourceTree = "<group>"; };
+		6CFC2A8713DE660300A26034 /* AFOpenFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOpenFlowView.h; sourceTree = "<group>"; };
+		6CFC2A8813DE660300A26034 /* AFOpenFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOpenFlowView.m; sourceTree = "<group>"; };
+		6CFC2A8913DE660300A26034 /* AFUIImageReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFUIImageReflection.h; sourceTree = "<group>"; };
+		6CFC2A8A13DE660300A26034 /* AFUIImageReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFUIImageReflection.m; sourceTree = "<group>"; };
+		6CFC2B9313DE764F00A26034 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		6CFC2B9E13DE765800A26034 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MeditationTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MeditationTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +176,7 @@
 		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
 			isa = PBXGroup;
 			children = (
+				6CFC2A8313DE660300A26034 /* AFOpenFlow */,
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
@@ -185,6 +206,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6CFC2B9E13DE765800A26034 /* icons */,
+				6CFC2B9313DE764F00A26034 /* images */,
 				6CAAD73413BC34D60045A93D /* Base */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
@@ -277,6 +300,24 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		6CFC2A8313DE660300A26034 /* AFOpenFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6CFC2A8013DE65FD00A26034 /* AFGetImageOperation.h */,
+				6CFC2A8113DE65FD00A26034 /* AFGetImageOperation.m */,
+				6CFC2A7613DE65DE00A26034 /* UIImageExtras.h */,
+				6CFC2A7713DE65DE00A26034 /* UIImageExtras.m */,
+				6CFC2A8413DE660300A26034 /* AFOpenFlowConstants.h */,
+				6CFC2A8513DE660300A26034 /* AFCoverView.h */,
+				6CFC2A8613DE660300A26034 /* AFCoverView.m */,
+				6CFC2A8713DE660300A26034 /* AFOpenFlowView.h */,
+				6CFC2A8813DE660300A26034 /* AFOpenFlowView.m */,
+				6CFC2A8913DE660300A26034 /* AFUIImageReflection.h */,
+				6CFC2A8A13DE660300A26034 /* AFUIImageReflection.m */,
+			);
+			name = AFOpenFlow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +390,8 @@
 				6C59F25513D92E190013CD96 /* info@2x.png in Resources */,
 				6C59F25713D92EA30013CD96 /* Yeah_04127_SFX.caf in Resources */,
 				6C59F25913D92ED70013CD96 /* push_test.caf in Resources */,
+				6CFC2B9D13DE764F00A26034 /* images in Resources */,
+				6CFC2BA813DE765800A26034 /* icons in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +418,11 @@
 				6CAAD7FD13BC3B890045A93D /* AppContext.m in Sources */,
 				6C1BAF0413C56B540057318B /* AboutViewController.m in Sources */,
 				6C59F24E13D92DAD0013CD96 /* InfoViewController.m in Sources */,
+				6CFC2A7813DE65DE00A26034 /* UIImageExtras.m in Sources */,
+				6CFC2A8213DE65FD00A26034 /* AFGetImageOperation.m in Sources */,
+				6CFC2A8B13DE660300A26034 /* AFCoverView.m in Sources */,
+				6CFC2A8C13DE660300A26034 /* AFOpenFlowView.m in Sources */,
+				6CFC2A8D13DE660300A26034 /* AFUIImageReflection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

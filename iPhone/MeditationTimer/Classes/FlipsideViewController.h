@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AFOpenFlowView.h"
 @protocol FlipsideViewControllerDelegate;
 
 
-@interface FlipsideViewController : UIViewController  <UIActionSheetDelegate, UIPickerViewDelegate> {
+@interface FlipsideViewController : UIViewController  <UIActionSheetDelegate, UIPickerViewDelegate,AFOpenFlowViewDataSource, AFOpenFlowViewDelegate> {
 	id <FlipsideViewControllerDelegate> delegate;
 	IBOutlet UITextField * duration;
 	IBOutlet UITextField * type;
@@ -27,6 +27,12 @@
 	
 	NSMutableArray * firsts;
 	NSMutableArray * seconds;
+	
+	IBOutlet AFOpenFlowView * openFlowView;
+	
+	NSOperationQueue *loadImagesOperationQueue;
+	int currentIndex;
+
 }
 
 @property(nonatomic,retain) NSMutableArray * firsts;
@@ -49,6 +55,8 @@
 -(void)setField:(UITextField *)field withKey:(NSString *)key;
 
 -(IBAction)saveTouched;
+
+-(IBAction)infoButtonTouched;
 
 @end
 

@@ -7,7 +7,8 @@
 //
 
 #import "FlipsideViewController.h"
-
+#import "AFGetImageOperation.h"
+#import "InfoViewController.h"
 
 @implementation FlipsideViewController
 
@@ -47,8 +48,7 @@
 		self.seconds = nil;
 		
 		
-		
-		
+	
 		[firsts addObject:@"golden bells"];
 		[firsts addObject:@"repeating bells"];
 		[firsts addObject:@"start and end bells"];
@@ -171,10 +171,14 @@
 		
 		NSArray * parts = [secondaryTime.text componentsSeparatedByString:@" "];
 		NSString * first = [parts objectAtIndex:0];
-		NSString * second = [parts objectAtIndex:1];
+		
 		
 		[self.secondaryTimePicker selectRow:[self.firsts indexOfObject:first] inComponent:0 animated:YES];
-		[self.secondaryTimePicker selectRow:[self.seconds indexOfObject:second] inComponent:1 animated:YES];
+		
+		if( parts.count > 1 ){
+			NSString * second = [parts objectAtIndex:1];
+			[self.secondaryTimePicker selectRow:[self.seconds indexOfObject:second] inComponent:1 animated:YES];
+		}
 		
 		
 		UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"Duration" 
@@ -257,12 +261,48 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];   
 	
+
+	
     [self setField:sound withKey:@"sound"];
 	[self setField:duration withKey:@"duration"];
 	[self setField:secondaryTime withKey:@"secondaryTime"];
 	[self setField:type withKey:@"type"];
+	
 	volumeSlider.value = [AppSettings getFloat:@"volume"];
 	
+
+	
+	loadImagesOperationQueue = [[NSOperationQueue alloc] init];
+	
+	NSString * directoryPath = [[NSBundle mainBundle] pathForResource:@"icons" ofType:@""];
+	
+	NSLog(@"%@",directoryPath);
+	
+	int i = 0;
+	
+	for( NSString * file in [AppContext sharedContext].images ) {				
+		UIImage * image = [UIImage imageWithContentsOfFile:[directoryPath stringByAppendingPathComponent:file]];
+		
+		[(AFOpenFlowView *)openFlowView setImage:image forIndex:i];
+		i++;
+	}
+	
+	[(AFOpenFlowView *)openFlowView setNumberOfImages:i]; 
+	
+	[openFlowView setSelectedCover:[AppSettings getInt:@"image"]];
+	[openFlowView centerOnSelectedCover:NO];
+	currentIndex = [AppSettings getInt:@"image"];
+}
+
+
+
+- (void)imageDidLoad:(NSArray *)arguments {
+	UIImage *loadedImage = (UIImage *)[arguments objectAtIndex:0];
+	NSNumber *imageIndex = (NSNumber *)[arguments objectAtIndex:1];
+	
+	
+	
+	[(AFOpenFlowView *)openFlowView setImage:loadedImage forIndex:[imageIndex intValue]];
 }
 
 -(void)setField:(UITextField *)field withKey:(NSString *)key;
@@ -297,16 +337,48 @@
 	[AppSettings storeString:type.text forKey:@"type"];	
 	
 	[AppSettings storeFloat:volumeSlider.value forKey:@"volume"];
+	
+	[AppSettings storeInt:currentIndex  forKey:@"image"];
+	
 	[self.delegate flipsideViewControllerDidFinish:self];	
 }
 
-
+-(void)infoButtonTouched;
+{
+	InfoViewController * controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
+	controller.delegate = self;
+	[self presentModalViewController:controller animated:YES];
+	[controller release];
+}
 
 
 
 - (void)dealloc {
     [super dealloc];
 }
+
+- (UIImage *)defaultImage {
+	return [UIImage imageNamed:@"default.png"];
+}
+
+- (void)openFlowView:(AFOpenFlowView *)openFlowView requestImageForIndex:(int)index {
+	AFGetImageOperation *getImageOperation = [[AFGetImageOperation alloc] initWithIndex:index viewController:self];
+	
+	
+	[loadImagesOperationQueue addOperation:getImageOperation];
+	[getImageOperation release];
+}
+
+- (void)openFlowView:(AFOpenFlowView *)openFlowView selectionDidChange:(int)index {
+	NSLog(@"Cover Flow selection did change to %d", index);
+	currentIndex = index;
+
+	
+}
+
+-(void)openFlowView:(AFOpenFlowView *)openFlowView  didTapSelectedCoverView:(int)index{
+}
+
 
 
 @end

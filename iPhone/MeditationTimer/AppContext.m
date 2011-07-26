@@ -13,7 +13,7 @@
 
 @synthesize playBackSpeed;
 
-@synthesize sounds;
+@synthesize sounds,images;
 
 static AppContext *sharedGContext = nil;
 
@@ -100,6 +100,24 @@ static AppContext *sharedGContext = nil;
 			[self.sounds addObject:[parts objectAtIndex:0]];	
 		}
 	}
+	
+	
+	[AppSettings storeStringDefault:@"20 minutes" forKey:@"duration"];
+	[AppSettings storeStringDefault:@"start and end bells" forKey:@"type"];
+	[AppSettings storeStringDefault:@"none" forKey:@"secondaryTime"];
+	[AppSettings storeStringDefault:[[AppContext sharedContext].sounds objectAtIndex:0] forKey:@"sound"];
+	[AppSettings storeFloatDefault:0.5f forKey:@"volume"];
+	
+	NSString * directoryPath = [[NSBundle mainBundle] pathForResource:@"icons" ofType:@""];
+	
+	NSLog(@"%@",directoryPath);
+		
+	self.images = [[[[NSFileManager defaultManager] directoryContentsAtPath:directoryPath] mutableCopy] autorelease];
+	
+	//[AppSettings storeStringDefault: forKey:@"image"];
+	
+	[AppSettings storeIntDefault:2 forKey:@"image"];
+	
 }
 
 

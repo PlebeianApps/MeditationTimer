@@ -18,10 +18,13 @@
 	float playBackSpeed;
 	NSMutableArray * sounds;
 	
+	NSMutableArray * images;
+	
 }
 
 
 @property(nonatomic,retain) NSMutableArray * sounds;
+@property(nonatomic,retain) NSMutableArray * images;
 @property(nonatomic,assign) float playBackSpeed;
 
 + (AppContext *)sharedContext;

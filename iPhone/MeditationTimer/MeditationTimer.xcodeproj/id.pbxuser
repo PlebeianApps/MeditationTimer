@@ -10,6 +10,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 68983B7513CE81B8003B2E52 /* MeditationTimer */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MeditationTimer */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* MeditationTimer */,
+		);
 		codeSenseManager = 68983B9413CE81CB003B2E52 /* Code sense */;
 		executables = (
 			68983B7513CE81B8003B2E52 /* MeditationTimer */,
@@ -37,8 +40,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 332300728;
-			PBXWorkspaceStateSaveDate = 332300728;
+			PBXPerProjectTemplateStateSaveDate = 333423932;
+			PBXWorkspaceStateSaveDate = 333423932;
 		};
 		sourceControlManager = 68983B9313CE81CB003B2E52 /* Source Control */;
 		userBuildSettings = {
@@ -85,5 +88,12 @@
 	68983B9413CE81CB003B2E52 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	6CAAD77B13BC377F0045A93D /* TimerControlViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {863, 689}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 519}";
+		};
 	};
 }

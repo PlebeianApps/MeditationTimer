@@ -13,7 +13,7 @@
 
 @synthesize playBackSpeed;
 
-@synthesize sounds,images;
+@synthesize sounds,images,player;
 
 static AppContext *sharedGContext = nil;
 
@@ -43,6 +43,27 @@ static AppContext *sharedGContext = nil;
 	return (NSTimeInterval)[numberPart floatValue] * multiplier;
 }
 
+
+-(void)stopSound;
+{
+	[self.player stop];	
+}
+
+-(void)playSound:(NSString *)sound;
+{
+	[self.player stop];
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] 
+                                               pathForResource:sound
+                                               ofType:@"caf"]];
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+	self.player.volume = [AppSettings getFloat:@"volume"];
+    [self.player play];
+}
+
+-(void)playSound
+{	
+	[self playSound:[AppSettings getString:@"sound"]];
+}
 
 + (AppContext *)sharedContext
 {

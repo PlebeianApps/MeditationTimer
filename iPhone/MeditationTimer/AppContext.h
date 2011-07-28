@@ -13,16 +13,23 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+
+#import <AVFoundation/AVFoundation.h>
+#import <CoreAudio/CoreAudioTypes.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 @interface AppContext : BaseAppContext {
 
 	float playBackSpeed;
 	NSMutableArray * sounds;
 	
 	NSMutableArray * images;
-	
+	AVAudioPlayer * player;
+
 }
 
 
+@property(nonatomic,retain) AVAudioPlayer * player;
 @property(nonatomic,retain) NSMutableArray * sounds;
 @property(nonatomic,retain) NSMutableArray * images;
 @property(nonatomic,assign) float playBackSpeed;
@@ -31,5 +38,8 @@
 -(UIImage *)getCurrentImage;
 -(NSTimeInterval)getCurrentDurationSeconds;
 -(NSTimeInterval)getSecondaryTimeSeconds;
+-(void)playSound;
+-(void)stopSound;
+-(void)playSound:(NSString *)sound;
 
 @end

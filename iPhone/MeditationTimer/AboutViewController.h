@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "FlipsideViewController.h"
 
-@interface AboutViewController : FlipsideViewController {
+@interface AboutViewController : UIViewController {
 
+	IBOutlet UIScrollView * theScrollView;
+	IBOutlet UIImageView * theImageView;
 }
+- (IBAction)done:(id)sender;
 
 @end

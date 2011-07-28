@@ -12,26 +12,13 @@
 @implementation TimerViewController
 
 
-@synthesize lastCheckpoint, alarmTimes, player;
-
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+@synthesize lastCheckpoint, alarmTimes;
 
 
 
 - (void)dealloc {
     [super dealloc];
 	self.alarmTimes = nil;
-	[self.player stop];
-	self.player = nil;
 }
 
 
@@ -41,10 +28,12 @@
 	imageView.image = [[AppContext sharedContext] getCurrentImage];
 	
 	[UIView beginAnimations:@"fade" context:nil];
-	[UIView setAnimationDuration:1.0];
+	[UIView setAnimationDuration:0.33f];
+	[UIView setAnimationDelay:4.0f];
 	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	progressView.alpha = 0.0f;
+	progressView.frame = CGRectMake(0, 480, 320, 480);
 	[UIView commitAnimations];
+	
 	
 	secondsLeft = [[AppContext sharedContext] getCurrentDurationSeconds];
 	totalDuration = secondsLeft;
@@ -62,7 +51,7 @@
 	}
 	
 	[self recalc];
-
+	
 }
 
 
@@ -113,9 +102,9 @@
 		secsLeft = secsLeft - nextSeconds;
 		NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
 	}
-
+	[alarmTimes removeObjectAtIndex:0];
 	NSLog(@" %@ ", alarmTimes);
-
+	
 }
 
 -(void)checkpoint;
@@ -129,54 +118,56 @@
 -(void)recalc;
 {
 	@synchronized(self){
-	if( !pausing ){
-		
-		NSTimeInterval timeSinceLastCheckPoint = [lastCheckpoint timeIntervalSinceNow];
-		totalAccumulated = totalAtLastCheckpoint + fabs(timeSinceLastCheckPoint);
-		if( alarmTimes.count > 0 ){
-		NSNumber * nextAlarm = [alarmTimes objectAtIndex:0];
-		if( totalAccumulated > [nextAlarm intValue] ){
-			[self playSound]; 
-			[self.alarmTimes removeObjectAtIndex:0];
+		if( !pausing ){
+			
+			NSTimeInterval timeSinceLastCheckPoint = [lastCheckpoint timeIntervalSinceNow];
+			totalAccumulated = totalAtLastCheckpoint + fabs(timeSinceLastCheckPoint);
+			if( alarmTimes.count > 0 ){
+				NSNumber * nextAlarm = [alarmTimes objectAtIndex:0];
+				
+				if( totalAccumulated > [nextAlarm intValue] ){
+					[[AppContext sharedContext] playSound]; 
+					[self.alarmTimes removeObjectAtIndex:0];
+				}
+			}
+			
+			if( totalAccumulated >= totalDuration ){
+				[self performSelector:@selector(exitTouched) withObject:nil afterDelay:0];
+				return;
+			}
+			
 		}
-		}
 		
-		if( totalAccumulated >= totalDuration ){
-			[self performSelector:@selector(exitTouched) withObject:nil afterDelay:0];
-			return;
-		}
+		imageView.alpha = 1.0 - totalAccumulated / totalDuration;
 		
-	}
 		
-	imageView.alpha = 1.0 - totalAccumulated / totalDuration;
-
+		NSLog(@"Time accululated %f", totalAccumulated);
 		
-	NSLog(@"Time accululated %f", totalAccumulated);
-	
-	[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
-	[self setupTimeLabel];
+		[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
+		[self setupTimeLabel];
 	}
 }
 
--(void)playSound
-{
-	[self.player stop];
-    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] 
-                                               pathForResource:[AppSettings getString:@"sound"]
-                                               ofType:@"caf"]];
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
-    [self.player play];
-  //  [click release];
-}
+
 
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 {
-	if( progressView.alpha < 1.0f ){
-		progressView.alpha = YES;	
+	if( progressView.frame.origin.y > 400.0f ){
+		
+		[UIView beginAnimations:@"fade" context:nil];
+		[UIView setAnimationDuration:0.33f];
+		[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+		progressView.frame = CGRectMake(0, 0, 320, 480);
+		[UIView commitAnimations];
+		
+		
 	} else {
-		progressView.alpha = NO;	
-	}
+		[UIView beginAnimations:@"fade" context:nil];
+		[UIView setAnimationDuration:0.33f];
+		[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+		progressView.frame = CGRectMake(0, 480, 320, 480);
+		[UIView commitAnimations];	}
 }
 
 -(void)setupTimeLabel;
@@ -193,7 +184,7 @@
 		hours = min;
 	    min = secs;	
 	} 
-
+	
 	
 	
 	timeLeft.text = [NSString stringWithFormat:@"%02d:%02d",hours,min];
@@ -219,12 +210,12 @@
 
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations.
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

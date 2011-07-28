@@ -22,12 +22,18 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	CGRect frame = theImageView.frame;
+	frame.size.width = theImageView.image.size.width;
+	frame.size.height = theImageView.image.size.height;
+	theImageView.frame = frame;
+	
+	theScrollView.contentSize = theImageView.image.size;
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -36,6 +42,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (void)done:(id)sender {
+	[self dismissModalViewControllerAnimated:YES];	
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

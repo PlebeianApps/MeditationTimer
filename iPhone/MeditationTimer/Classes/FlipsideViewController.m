@@ -8,7 +8,7 @@
 
 #import "FlipsideViewController.h"
 #import "AFGetImageOperation.h"
-#import "InfoViewController.h"
+#import "AboutViewController.h"
 
 @implementation FlipsideViewController
 
@@ -100,6 +100,14 @@
 		
 		[menu release];
 		
+	}
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+{
+	if( self.soundPicker != nil ){
+		NSString * s = [self.firsts objectAtIndex:row];
+		[[AppContext sharedContext] playSound:s];
 	}
 }
 
@@ -316,19 +324,6 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
 -(void)saveTouched;
 {
 	[AppSettings storeString:sound.text forKey:@"sound"];	
@@ -345,7 +340,7 @@
 
 -(void)infoButtonTouched;
 {
-	InfoViewController * controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
+	AboutViewController * controller = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
 	[self presentModalViewController:controller animated:YES];
 	[controller release];
 }

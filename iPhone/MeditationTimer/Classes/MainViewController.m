@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	TimerControlViewController * controller = [[TimerControlViewController alloc] initWithNibName:@"TimerControlViewController" bundle:nil];
-	controller.view.center = CGPointMake(160, 180);
+	controller.view.center = CGPointMake(160, 230);
 	[self.view addSubview:controller.view];
 	
 	[[AppContext sharedContext] addObserver:self forKeyPath:@"playBackSpeed" options:0 context:nil];
@@ -43,7 +43,6 @@
 -(void)showAbout;
 {
 	AboutViewController * controller = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-	controller.delegate = self;
 	[self presentModalViewController:controller animated:YES];
 	[controller release];
 }

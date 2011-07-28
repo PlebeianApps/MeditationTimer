@@ -32,6 +32,8 @@
 	
 	NSOperationQueue *loadImagesOperationQueue;
 	int currentIndex;
+	
+	
 
 }
 
@@ -57,6 +59,7 @@
 -(IBAction)saveTouched;
 
 -(IBAction)infoButtonTouched;
+-(IBAction)volumeChanged;
 
 @end
 

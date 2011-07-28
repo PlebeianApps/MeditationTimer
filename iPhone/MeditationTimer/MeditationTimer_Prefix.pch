@@ -20,3 +20,7 @@
 #import "BaseAppContext.h"
 #import "AppContext.h"
 #endif
+
+#define GOLDEN_BELLS @"golden bells"
+#define REPEATING_BELLS @"repeating bells"
+#define START_AND_END_BELLS @"start and end bells"

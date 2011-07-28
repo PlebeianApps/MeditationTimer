@@ -33,7 +33,9 @@
 	NSOperationQueue *loadImagesOperationQueue;
 	int currentIndex;
 	
+	IBOutlet UILabel * secondaryTimeLabel;
 	
+	IBOutlet UIView * mask;
 
 }
 
@@ -60,6 +62,7 @@
 
 -(IBAction)infoButtonTouched;
 -(IBAction)volumeChanged;
+-(void)setupSecondaryLabel;
 
 @end
 

@@ -27,6 +27,8 @@
 	
 	NSMutableArray * alarmTimes;
 	
+	BOOL done;
+	
 }
 
 
@@ -42,4 +44,6 @@
 
 - (void) initializeRepeatingAlarmTimes;
 - (void) initializeGoldenAlarmTimes;
+- (void)initStartAndEndBells;
+
 @end

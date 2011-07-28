@@ -17,6 +17,30 @@
 
 @synthesize firsts, seconds;
 
+
+-(void)setupSecondaryLabel;
+{
+	if( [type.text isEqual:GOLDEN_BELLS] ){
+		secondaryTimeLabel.text = @"Golden bells at end for";
+		secondaryTime.enabled = YES;	
+		mask.hidden = YES;
+		secondaryTimeLabel.textColor = [UIColor whiteColor];
+	} else if( [type.text isEqual:REPEATING_BELLS] ){
+		secondaryTimeLabel.text = @"Bells every";
+		secondaryTime.enabled = YES;	
+		mask.hidden = YES;
+		
+		secondaryTimeLabel.textColor = [UIColor whiteColor];
+
+	} else {
+		secondaryTime.enabled = NO;	
+		mask.hidden = NO;
+		secondaryTimeLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.3f];
+	}	
+	
+	secondaryTime.textColor = secondaryTimeLabel.textColor;
+
+}
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;
 {
 	
@@ -49,9 +73,9 @@
 		
 		
 	
-		[firsts addObject:@"golden bells"];
-		[firsts addObject:@"repeating bells"];
-		[firsts addObject:@"start and end bells"];
+		[firsts addObject:GOLDEN_BELLS];
+		[firsts addObject:REPEATING_BELLS];
+		[firsts addObject:START_AND_END_BELLS];
 
 		int index = [self.firsts indexOfObject:type.text];
 		[self.typePicker selectRow:index inComponent:0 animated:YES];
@@ -223,6 +247,7 @@
 		type.text = [NSString stringWithFormat:@"%@", month];		
 		self.typePicker = nil;
 
+		[self setupSecondaryLabel];
 		
 	} else if( self.secondaryTimePicker ){
 		
@@ -279,6 +304,7 @@
 	volumeSlider.value = [AppSettings getFloat:@"volume"];
 	
 
+	[self setupSecondaryLabel];
 	
 	loadImagesOperationQueue = [[NSOperationQueue alloc] init];
 	
@@ -307,9 +333,6 @@
 - (void)imageDidLoad:(NSArray *)arguments {
 	UIImage *loadedImage = (UIImage *)[arguments objectAtIndex:0];
 	NSNumber *imageIndex = (NSNumber *)[arguments objectAtIndex:1];
-	
-	
-	
 	[(AFOpenFlowView *)openFlowView setImage:loadedImage forIndex:[imageIndex intValue]];
 }
 

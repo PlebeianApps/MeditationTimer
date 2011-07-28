@@ -17,8 +17,10 @@
 
 
 - (void)dealloc {
-    [super dealloc];
 	self.alarmTimes = nil;
+	self.lastCheckpoint = nil;
+	[super dealloc];
+
 }
 
 
@@ -44,14 +46,25 @@
 	
     [self checkpoint];					  
 	
-	if( [[AppSettings getString:@"type"] isEqual:@"repeating bells"] ){
+	if( [[AppSettings getString:@"type"] isEqual:REPEATING_BELLS] ){
 		[self initializeRepeatingAlarmTimes];
-	} else {
+	} else if ( [[AppSettings getString:@"type"] isEqual:GOLDEN_BELLS] ) {
 		[self initializeGoldenAlarmTimes];
+	} else {
+	    [self initStartAndEndBells];	
 	}
 	
-	[self recalc];
+	[self performSelector:@selector(recalc) withObject:nil afterDelay:0];
 	
+}
+
+
+- (void)initStartAndEndBells;
+{
+	[alarmTimes addObject:[NSNumber numberWithInt:0]];
+    [alarmTimes addObject:[NSNumber numberWithInt:totalDuration]];
+	 NSLog(@" %@ ", alarmTimes);
+
 }
 
 
@@ -86,9 +99,9 @@
 
 - (void) initializeGoldenAlarmTimes{
 	
-	[alarmTimes addObject:[NSNumber numberWithInt:0]];
+	[alarmTimes addObject:[NSNumber numberWithInt:totalDuration]];
 	
-	NSTimeInterval totalNumberOfSecondsToRunAlarm = totalDuration;
+	NSTimeInterval totalNumberOfSecondsToRunAlarm = [[AppContext sharedContext] getSecondaryTimeSeconds];
 	
 	float nextSeconds = totalNumberOfSecondsToRunAlarm * 0.625f;
 	float secsLeft = totalNumberOfSecondsToRunAlarm - nextSeconds;
@@ -102,9 +115,10 @@
 		secsLeft = secsLeft - nextSeconds;
 		NSLog(@"Alarm set for a total of %f seconds and a bell will go off at %f seconds and there are %f seconds left",totalNumberOfSecondsToRunAlarm,nextSeconds,secsLeft);
 	}
-	[alarmTimes removeObjectAtIndex:0];
-	NSLog(@" %@ ", alarmTimes);
 	
+	
+	
+	NSLog(@" %@ ", alarmTimes);	
 }
 
 -(void)checkpoint;
@@ -129,9 +143,7 @@
 					[[AppContext sharedContext] playSound]; 
 					[self.alarmTimes removeObjectAtIndex:0];
 				}
-			}
-			
-			if( totalAccumulated >= totalDuration ){
+			} else if( totalAccumulated >= totalDuration ){
 				[self performSelector:@selector(exitTouched) withObject:nil afterDelay:0];
 				return;
 			}
@@ -142,8 +154,9 @@
 		
 		
 		NSLog(@"Time accululated %f", totalAccumulated);
-		
-		[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
+		if( !done ){
+			[self performSelector:@selector(recalc) withObject:nil afterDelay:1.0];
+		}
 		[self setupTimeLabel];
 	}
 }
@@ -205,30 +218,10 @@
 
 -(void)exitTouched;
 {
+	done = YES;
 	[self dismissModalViewControllerAnimated:NO];
 }
 
-
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations.
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc. that aren't in use.
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 
 

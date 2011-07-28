@@ -270,22 +270,22 @@
 								<string>6CFC2C3F13DE808E00A26034</string>
 								<string>289233A00DB2D0730083E9F9</string>
 								<string>281C6CD70DB2D82200F60ACC</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>6C59F22713D92BE90013CD96</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>71</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {352, 961}}</string>
+							<string>{{0, 450}, {352, 961}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -332,7 +332,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6CD2032C13E126E400568979</string>
+										<string>6CD203AD13E1326800568979</string>
 										<key>history</key>
 										<array>
 											<string>6CAAD7D413BC39070045A93D</string>
@@ -345,7 +345,6 @@
 											<string>6C1BAF1213C56CC20057318B</string>
 											<string>6C84104113D1556000CE8735</string>
 											<string>6C84104213D1556000CE8735</string>
-											<string>6C84104413D1556000CE8735</string>
 											<string>6C84104513D1556000CE8735</string>
 											<string>6C59F27913D930E10013CD96</string>
 											<string>6C59F27C13D930E10013CD96</string>
@@ -378,15 +377,16 @@
 											<string>6CD202C213E11F1100568979</string>
 											<string>6CD202DA13E11FCD00568979</string>
 											<string>6CD202F413E1214D00568979</string>
-											<string>6CD202F613E1214D00568979</string>
 											<string>6CD2031013E124EA00568979</string>
 											<string>6CD2031113E124EA00568979</string>
 											<string>6CD2031213E124EA00568979</string>
-											<string>6CD2031413E124EA00568979</string>
-											<string>6CD2031B13E125AD00568979</string>
-											<string>6CD2031C13E125AD00568979</string>
 											<string>6CD2032413E1268000568979</string>
-											<string>6CD2032513E1268000568979</string>
+											<string>6CD2033A13E12A7600568979</string>
+											<string>6CD2033D13E12C2D00568979</string>
+											<string>6CD2035413E12D9200568979</string>
+											<string>6CD2036513E1307900568979</string>
+											<string>6CD203A913E1321800568979</string>
+											<string>6CD203AA13E1321800568979</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -564,12 +564,12 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {1205, 302}}</string>
+						<string>{{0, 0}, {1205, 382}}</string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>302pt</string>
+					<string>382pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -588,8 +588,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {588, 328}}</string>
-									<string>{{588, 0}, {617, 328}}</string>
+									<string>{{0, 0}, {588, 289}}</string>
+									<string>{{588, 0}, {617, 289}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -604,8 +604,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {1205, 328}}</string>
-									<string>{{0, 328}, {1205, 344}}</string>
+									<string>{{0, 0}, {1205, 289}}</string>
+									<string>{{0, 289}, {1205, 303}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -625,7 +625,7 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 307}, {1205, 672}}</string>
+						<string>{{0, 387}, {1205, 592}}</string>
 						<key>PBXDebugSessionStackFrameViewKey</key>
 						<dict>
 							<key>DebugVariablesTableConfiguration</key>
@@ -638,13 +638,13 @@
 								<real>387</real>
 							</array>
 							<key>Frame</key>
-							<string>{{588, 0}, {617, 328}}</string>
+							<string>{{588, 0}, {617, 289}}</string>
 						</dict>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>672pt</string>
+					<string>592pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -703,7 +703,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6CD2032D13E126E400568979</string>
+		<string>6CD203AC13E1321800568979</string>
 		<string>6CD202A513E11CF800568979</string>
 		<string>6CD202A313E11CA700568979</string>
 		<string>/Users/dclements/workspace/clients/plebs/MeditationTimer/iPhone/MeditationTimer/MeditationTimer.xcodeproj</string>

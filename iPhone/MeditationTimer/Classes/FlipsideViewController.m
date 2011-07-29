@@ -21,12 +21,12 @@
 -(void)setupSecondaryLabel;
 {
 	if( [type.text isEqual:GOLDEN_BELLS] ){
-		secondaryTimeLabel.text = @"Golden bells at end for";
+		secondaryTimeLabel.text = @"golden bells at end for";
 		secondaryTime.enabled = YES;	
 		mask.hidden = YES;
 		secondaryTimeLabel.textColor = [UIColor whiteColor];
 	} else if( [type.text isEqual:REPEATING_BELLS] ){
-		secondaryTimeLabel.text = @"Bells every";
+		secondaryTimeLabel.text = @"bells every";
 		secondaryTime.enabled = YES;	
 		mask.hidden = YES;
 		

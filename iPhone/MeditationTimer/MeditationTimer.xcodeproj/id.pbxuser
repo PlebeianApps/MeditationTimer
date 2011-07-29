@@ -13,6 +13,13 @@
 			sepNavVisRange = "{0, 920}";
 		};
 	};
+	289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 5343}}";
+			sepNavSelRange = "{866, 0}";
+			sepNavVisRange = "{555, 932}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 68983B7513CE81B8003B2E52 /* MeditationTimer */;

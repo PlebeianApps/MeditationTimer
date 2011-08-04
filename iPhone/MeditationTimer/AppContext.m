@@ -52,10 +52,23 @@ static AppContext *sharedGContext = nil;
 -(void)playSound:(NSString *)sound;
 {
 	[self.player stop];
-    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] 
-                                               pathForResource:sound
-                                               ofType:@"caf"]];
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+	
+	NSArray * types = [NSArray arrayWithObjects:@"caf",@"CAF",@"WAV",@"wav",@"mp3",@"MP3",nil];
+
+	NSString * path = nil;
+	
+	for( NSString * type in types ){
+		if( path == nil ){
+		   path = [[NSBundle mainBundle]  pathForResource:sound ofType:type];
+		}
+	} 
+	
+
+	
+    NSURL* musicFile = [NSURL fileURLWithPath:path];
+	
+	
+    self.player = [[[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil] autorelease];
 	self.player.volume = [AppSettings getFloat:@"volume"];
     [self.player play];
 }
@@ -96,11 +109,17 @@ static AppContext *sharedGContext = nil;
 	NSArray * homeDirectory = [[NSFileManager defaultManager] directoryContentsAtPath: [[NSBundle mainBundle] resourcePath]];
 
 	for( NSString * file in homeDirectory ){
-		if( [file rangeOfString:@".caf"].length > 0 ){
-			NSArray * parts = [file componentsSeparatedByString:@"."];
-			
-			[self.sounds addObject:[parts objectAtIndex:0]];	
+		
+		NSArray * types = [NSArray arrayWithObjects:@"caf",@"CAF",@"WAV",@"wav",@"mp3",@"MP3",nil];
+		for( NSString * type in types ){
+			if( [file rangeOfString:[NSString stringWithFormat:@".%@",type]].length > 0  ){
+				NSArray * parts = [file componentsSeparatedByString:@"."];
+				
+				[self.sounds addObject:[parts objectAtIndex:0]];	
+			continue;
+			}
 		}
+	
 	}
 	
 	
@@ -114,7 +133,14 @@ static AppContext *sharedGContext = nil;
 	
 	NSLog(@"%@",directoryPath);
 		
-	self.images = [[[[NSFileManager defaultManager] directoryContentsAtPath:directoryPath] mutableCopy] autorelease];
+	self.images = [NSMutableArray array];
+	NSArray * files = [[[[NSFileManager defaultManager] directoryContentsAtPath:directoryPath] mutableCopy] autorelease];
+	
+	for( int i = 0 ; i < files.count; i++ ){
+		if( [[files objectAtIndex:i] rangeOfString:@"2x"].length == 0 ){
+		   	[self.images addObject:[files objectAtIndex:i]];
+		}
+	}
 	
 	//[AppSettings storeStringDefault: forKey:@"image"];
 	

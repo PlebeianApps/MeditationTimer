@@ -99,6 +99,9 @@
 
 - (void) initializeGoldenAlarmTimes{
 	
+	[alarmTimes addObject:[NSNumber numberWithInt:0]];
+						   
+						   
 	[alarmTimes addObject:[NSNumber numberWithInt:totalDuration]];
 	
 	NSTimeInterval totalNumberOfSecondsToRunAlarm = [[AppContext sharedContext] getSecondaryTimeSeconds];

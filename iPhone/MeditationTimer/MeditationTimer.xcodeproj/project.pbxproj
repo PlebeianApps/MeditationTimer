@@ -30,6 +30,7 @@
 		68F7698F13EA429800B9E5DD /* icon_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698C13EA429800B9E5DD /* icon_store.png */; };
 		68F7699013EA429800B9E5DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698D13EA429800B9E5DD /* icon.png */; };
 		68F7699113EA429800B9E5DD /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698E13EA429800B9E5DD /* icon@2x.png */; };
+		68F769B513EA465600B9E5DD /* gong.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 68F769B413EA465600B9E5DD /* gong.WAV */; };
 		6C1BAF0413C56B540057318B /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BAF0213C56B540057318B /* AboutViewController.m */; };
 		6C1BAF0513C56B540057318B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1BAF0313C56B540057318B /* AboutViewController.xib */; };
 		6C59F23413D92BE90013CD96 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F22813D92BE90013CD96 /* Default.png */; };
@@ -107,6 +108,7 @@
 		68F7698C13EA429800B9E5DD /* icon_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_store.png; sourceTree = "<group>"; };
 		68F7698D13EA429800B9E5DD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		68F7698E13EA429800B9E5DD /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		68F769B413EA465600B9E5DD /* gong.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong.WAV; sourceTree = "<group>"; };
 		6C1BAF0113C56B540057318B /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6C1BAF0213C56B540057318B /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		6C1BAF0313C56B540057318B /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		6C59F22713D92BE90013CD96 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				68F769B413EA465600B9E5DD /* gong.WAV */,
 				68F7698C13EA429800B9E5DD /* icon_store.png */,
 				68F7698D13EA429800B9E5DD /* icon.png */,
 				68F7698E13EA429800B9E5DD /* icon@2x.png */,
@@ -473,6 +476,7 @@
 				68F7698F13EA429800B9E5DD /* icon_store.png in Resources */,
 				68F7699013EA429800B9E5DD /* icon.png in Resources */,
 				68F7699113EA429800B9E5DD /* icon@2x.png in Resources */,
+				68F769B513EA465600B9E5DD /* gong.WAV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

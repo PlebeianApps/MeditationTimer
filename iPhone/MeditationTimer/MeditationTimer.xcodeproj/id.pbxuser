@@ -117,11 +117,32 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	6CAAD73713BC34F60045A93D /* AppSettings.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {977, 3601}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 654}";
+		};
+	};
+	6CAAD73813BC34F60045A93D /* AppSettings.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {977, 1066}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 681}";
+		};
+	};
 	6CAAD77B13BC377F0045A93D /* TimerControlViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {863, 689}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 519}";
+		};
+	};
+	6CFC2A8013DE65FD00A26034 /* AFGetImageOperation.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {977, 494}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{446, 1041}";
 		};
 	};
 }

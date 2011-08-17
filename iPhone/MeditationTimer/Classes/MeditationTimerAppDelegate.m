@@ -26,6 +26,8 @@
     // Add the main view controller's view to the window and display.
     [self.window addSubview:mainViewController.view];
     [self.window makeKeyAndVisible];
+	
+	application.idleTimerDisabled = YES;
 
     return YES;
 }

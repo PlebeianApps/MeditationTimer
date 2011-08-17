@@ -231,6 +231,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -316,8 +318,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -335,7 +335,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6CF620D913EAD4C30081CFAB</string>
+										<string>6CF620DC13EADFD40081CFAB</string>
 										<key>history</key>
 										<array>
 											<string>6CAAD7D413BC39070045A93D</string>
@@ -391,7 +391,7 @@
 											<string>6CF6209A13EAD1EC0081CFAB</string>
 											<string>6CF620C413EAD3FE0081CFAB</string>
 											<string>6CF620D713EAD4C30081CFAB</string>
-											<string>6CF620D813EAD4C30081CFAB</string>
+											<string>6CF620DB13EADFD40081CFAB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -708,7 +708,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6CF620DA13EAD4C30081CFAB</string>
 		<string>6CF6208F13EAD0400081CFAB</string>
 		<string>6CF6209013EAD0400081CFAB</string>
 		<string>/Users/dclements/workspace/clients/plebs/MeditationTimer/iPhone/MeditationTimer/MeditationTimer.xcodeproj</string>

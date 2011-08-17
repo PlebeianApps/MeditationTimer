@@ -23,6 +23,10 @@
 		68D0ABF413DFB11700CDDC7A /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0ABF213DFB11700CDDC7A /* header@2x.png */; };
 		68D0AC0713DFC59F00CDDC7A /* volume_high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0AC0613DFC59F00CDDC7A /* volume_high@2x.png */; };
 		68D0AC0913DFC5B100CDDC7A /* volume_low@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0AC0813DFC5B100CDDC7A /* volume_low@2x.png */; };
+		68DD841713FB94AA00AA564C /* LowGong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841513FB94AA00AA564C /* LowGong.wav */; };
+		68DD841813FB94AA00AA564C /* Match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841613FB94AA00AA564C /* Match.wav */; };
+		68DD841A13FB94BA00AA564C /* HighGong.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841913FB94BA00AA564C /* HighGong.WAV */; };
+		68DD841C13FB94CA00AA564C /* Block.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841B13FB94CA00AA564C /* Block.wav */; };
 		68F7684613E0EF8600B9E5DD /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7684413E0EF8600B9E5DD /* options.png */; };
 		68F7684713E0EF8600B9E5DD /* options@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7684513E0EF8600B9E5DD /* options@2x.png */; };
 		68F768D613E33E0200B9E5DD /* aboutback.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F768D413E33E0200B9E5DD /* aboutback.png */; };
@@ -30,7 +34,6 @@
 		68F7698F13EA429800B9E5DD /* icon_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698C13EA429800B9E5DD /* icon_store.png */; };
 		68F7699013EA429800B9E5DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698D13EA429800B9E5DD /* icon.png */; };
 		68F7699113EA429800B9E5DD /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7698E13EA429800B9E5DD /* icon@2x.png */; };
-		68F769B513EA465600B9E5DD /* gong.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 68F769B413EA465600B9E5DD /* gong.WAV */; };
 		6C1BAF0413C56B540057318B /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BAF0213C56B540057318B /* AboutViewController.m */; };
 		6C1BAF0513C56B540057318B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1BAF0313C56B540057318B /* AboutViewController.xib */; };
 		6C59F23413D92BE90013CD96 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F22813D92BE90013CD96 /* Default.png */; };
@@ -49,8 +52,6 @@
 		6C59F24F13D92DAD0013CD96 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F24D13D92DAD0013CD96 /* InfoViewController.xib */; };
 		6C59F25413D92E190013CD96 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F25213D92E190013CD96 /* info.png */; };
 		6C59F25513D92E190013CD96 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F25313D92E190013CD96 /* info@2x.png */; };
-		6C59F25713D92EA30013CD96 /* Yeah_04127_SFX.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F25613D92EA30013CD96 /* Yeah_04127_SFX.caf */; };
-		6C59F25913D92ED70013CD96 /* push_test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6C59F25813D92ED70013CD96 /* push_test.caf */; };
 		6CAAD73913BC34F60045A93D /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAD73513BC34F60045A93D /* SFHFKeychainUtils.m */; };
 		6CAAD73A13BC34F60045A93D /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAD73713BC34F60045A93D /* AppSettings.m */; };
 		6CAAD73D13BC35040045A93D /* AppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAAD73C13BC35040045A93D /* AppStyle.m */; };
@@ -101,6 +102,10 @@
 		68D0ABF213DFB11700CDDC7A /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
 		68D0AC0613DFC59F00CDDC7A /* volume_high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume_high@2x.png"; sourceTree = "<group>"; };
 		68D0AC0813DFC5B100CDDC7A /* volume_low@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume_low@2x.png"; sourceTree = "<group>"; };
+		68DD841513FB94AA00AA564C /* LowGong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LowGong.wav; sourceTree = "<group>"; };
+		68DD841613FB94AA00AA564C /* Match.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Match.wav; sourceTree = "<group>"; };
+		68DD841913FB94BA00AA564C /* HighGong.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighGong.WAV; sourceTree = "<group>"; };
+		68DD841B13FB94CA00AA564C /* Block.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Block.wav; sourceTree = "<group>"; };
 		68F7684413E0EF8600B9E5DD /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 		68F7684513E0EF8600B9E5DD /* options@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "options@2x.png"; sourceTree = "<group>"; };
 		68F768D413E33E0200B9E5DD /* aboutback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutback.png; sourceTree = "<group>"; };
@@ -108,7 +113,6 @@
 		68F7698C13EA429800B9E5DD /* icon_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_store.png; sourceTree = "<group>"; };
 		68F7698D13EA429800B9E5DD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		68F7698E13EA429800B9E5DD /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		68F769B413EA465600B9E5DD /* gong.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong.WAV; sourceTree = "<group>"; };
 		6C1BAF0113C56B540057318B /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6C1BAF0213C56B540057318B /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		6C1BAF0313C56B540057318B /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
@@ -129,8 +133,6 @@
 		6C59F24D13D92DAD0013CD96 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		6C59F25213D92E190013CD96 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		6C59F25313D92E190013CD96 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
-		6C59F25613D92EA30013CD96 /* Yeah_04127_SFX.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yeah_04127_SFX.caf; sourceTree = "<group>"; };
-		6C59F25813D92ED70013CD96 /* push_test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = push_test.caf; sourceTree = "<group>"; };
 		6CAAD73513BC34F60045A93D /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		6CAAD73613BC34F60045A93D /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		6CAAD73713BC34F60045A93D /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
@@ -301,7 +303,10 @@
 		6C59F22713D92BE90013CD96 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				68F769B413EA465600B9E5DD /* gong.WAV */,
+				68DD841B13FB94CA00AA564C /* Block.wav */,
+				68DD841913FB94BA00AA564C /* HighGong.WAV */,
+				68DD841513FB94AA00AA564C /* LowGong.wav */,
+				68DD841613FB94AA00AA564C /* Match.wav */,
 				68F7698C13EA429800B9E5DD /* icon_store.png */,
 				68F7698D13EA429800B9E5DD /* icon.png */,
 				68F7698E13EA429800B9E5DD /* icon@2x.png */,
@@ -315,8 +320,6 @@
 				68D0ABF213DFB11700CDDC7A /* header@2x.png */,
 				68D0ABED13DFB10A00CDDC7A /* button.png */,
 				68D0ABEE13DFB10A00CDDC7A /* button@2x.png */,
-				6C59F25813D92ED70013CD96 /* push_test.caf */,
-				6C59F25613D92EA30013CD96 /* Yeah_04127_SFX.caf */,
 				6C59F25213D92E190013CD96 /* info.png */,
 				6C59F25313D92E190013CD96 /* info@2x.png */,
 				6C59F22813D92BE90013CD96 /* Default.png */,
@@ -458,8 +461,6 @@
 				6C59F24F13D92DAD0013CD96 /* InfoViewController.xib in Resources */,
 				6C59F25413D92E190013CD96 /* info.png in Resources */,
 				6C59F25513D92E190013CD96 /* info@2x.png in Resources */,
-				6C59F25713D92EA30013CD96 /* Yeah_04127_SFX.caf in Resources */,
-				6C59F25913D92ED70013CD96 /* push_test.caf in Resources */,
 				6CFC2B9D13DE764F00A26034 /* images in Resources */,
 				6CFC2BA813DE765800A26034 /* icons in Resources */,
 				6CFC2C4413DE80B100A26034 /* TimerViewController.xib in Resources */,
@@ -476,7 +477,10 @@
 				68F7698F13EA429800B9E5DD /* icon_store.png in Resources */,
 				68F7699013EA429800B9E5DD /* icon.png in Resources */,
 				68F7699113EA429800B9E5DD /* icon@2x.png in Resources */,
-				68F769B513EA465600B9E5DD /* gong.WAV in Resources */,
+				68DD841713FB94AA00AA564C /* LowGong.wav in Resources */,
+				68DD841813FB94AA00AA564C /* Match.wav in Resources */,
+				68DD841A13FB94BA00AA564C /* HighGong.WAV in Resources */,
+				68DD841C13FB94CA00AA564C /* Block.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -527,6 +532,7 @@
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
 				PRODUCT_NAME = MeditationTimer;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
 			};
 			name = Debug;
 		};
@@ -534,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +550,7 @@
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
 				PRODUCT_NAME = MeditationTimer;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

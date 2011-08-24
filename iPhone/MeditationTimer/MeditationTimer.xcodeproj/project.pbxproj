@@ -23,10 +23,15 @@
 		68D0ABF413DFB11700CDDC7A /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0ABF213DFB11700CDDC7A /* header@2x.png */; };
 		68D0AC0713DFC59F00CDDC7A /* volume_high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0AC0613DFC59F00CDDC7A /* volume_high@2x.png */; };
 		68D0AC0913DFC5B100CDDC7A /* volume_low@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D0AC0813DFC5B100CDDC7A /* volume_low@2x.png */; };
+		68D4601814056D8600C2B215 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D4601714056D8600C2B215 /* Entitlements.plist */; };
 		68DD841713FB94AA00AA564C /* LowGong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841513FB94AA00AA564C /* LowGong.wav */; };
 		68DD841813FB94AA00AA564C /* Match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841613FB94AA00AA564C /* Match.wav */; };
 		68DD841A13FB94BA00AA564C /* HighGong.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841913FB94BA00AA564C /* HighGong.WAV */; };
 		68DD841C13FB94CA00AA564C /* Block.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68DD841B13FB94CA00AA564C /* Block.wav */; };
+		68E60AF91404BC370011348C /* Digeridoo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68E60AF51404BC370011348C /* Digeridoo.wav */; };
+		68E60AFA1404BC370011348C /* HighBell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68E60AF61404BC370011348C /* HighBell.wav */; };
+		68E60AFB1404BC370011348C /* HighGong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68E60AF71404BC370011348C /* HighGong.wav */; };
+		68E60AFC1404BC370011348C /* MidGong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68E60AF81404BC370011348C /* MidGong.wav */; };
 		68F7684613E0EF8600B9E5DD /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7684413E0EF8600B9E5DD /* options.png */; };
 		68F7684713E0EF8600B9E5DD /* options@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F7684513E0EF8600B9E5DD /* options@2x.png */; };
 		68F768D613E33E0200B9E5DD /* aboutback.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F768D413E33E0200B9E5DD /* aboutback.png */; };
@@ -102,10 +107,15 @@
 		68D0ABF213DFB11700CDDC7A /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
 		68D0AC0613DFC59F00CDDC7A /* volume_high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume_high@2x.png"; sourceTree = "<group>"; };
 		68D0AC0813DFC5B100CDDC7A /* volume_low@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume_low@2x.png"; sourceTree = "<group>"; };
+		68D4601714056D8600C2B215 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		68DD841513FB94AA00AA564C /* LowGong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LowGong.wav; sourceTree = "<group>"; };
 		68DD841613FB94AA00AA564C /* Match.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Match.wav; sourceTree = "<group>"; };
 		68DD841913FB94BA00AA564C /* HighGong.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighGong.WAV; sourceTree = "<group>"; };
 		68DD841B13FB94CA00AA564C /* Block.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Block.wav; sourceTree = "<group>"; };
+		68E60AF51404BC370011348C /* Digeridoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Digeridoo.wav; sourceTree = "<group>"; };
+		68E60AF61404BC370011348C /* HighBell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighBell.wav; sourceTree = "<group>"; };
+		68E60AF71404BC370011348C /* HighGong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighGong.wav; sourceTree = "<group>"; };
+		68E60AF81404BC370011348C /* MidGong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MidGong.wav; sourceTree = "<group>"; };
 		68F7684413E0EF8600B9E5DD /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 		68F7684513E0EF8600B9E5DD /* options@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "options@2x.png"; sourceTree = "<group>"; };
 		68F768D413E33E0200B9E5DD /* aboutback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutback.png; sourceTree = "<group>"; };
@@ -250,6 +260,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				68D4601714056D8600C2B215 /* Entitlements.plist */,
 				6CFC2C3F13DE808E00A26034 /* Timer */,
 				6CFC2B9E13DE765800A26034 /* icons */,
 				6CFC2B9313DE764F00A26034 /* images */,
@@ -303,6 +314,10 @@
 		6C59F22713D92BE90013CD96 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				68E60AF51404BC370011348C /* Digeridoo.wav */,
+				68E60AF61404BC370011348C /* HighBell.wav */,
+				68E60AF71404BC370011348C /* HighGong.wav */,
+				68E60AF81404BC370011348C /* MidGong.wav */,
 				68DD841B13FB94CA00AA564C /* Block.wav */,
 				68DD841913FB94BA00AA564C /* HighGong.WAV */,
 				68DD841513FB94AA00AA564C /* LowGong.wav */,
@@ -481,6 +496,11 @@
 				68DD841813FB94AA00AA564C /* Match.wav in Resources */,
 				68DD841A13FB94BA00AA564C /* HighGong.WAV in Resources */,
 				68DD841C13FB94CA00AA564C /* Block.wav in Resources */,
+				68E60AF91404BC370011348C /* Digeridoo.wav in Resources */,
+				68E60AFA1404BC370011348C /* HighBell.wav in Resources */,
+				68E60AFB1404BC370011348C /* HighGong.wav in Resources */,
+				68E60AFC1404BC370011348C /* MidGong.wav in Resources */,
+				68D4601814056D8600C2B215 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +551,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
+				INSTALL_PATH = entitlements.plist;
 				PRODUCT_NAME = MeditationTimer;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
 			};
@@ -549,11 +570,55 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
+				INSTALL_PATH = entitlements.plist;
 				PRODUCT_NAME = MeditationTimer;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		68E60B221404BEC90011348C /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = "Ad Hoc";
+		};
+		68E60B231404BEC90011348C /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer30/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
+				INFOPLIST_FILE = "MeditationTimer-Info.plist";
+				INSTALL_PATH = entitlements.plist;
+				PRODUCT_NAME = MeditationTimer;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -579,6 +644,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -590,6 +656,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				68E60B231404BEC90011348C /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -599,6 +666,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				68E60B221404BEC90011348C /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

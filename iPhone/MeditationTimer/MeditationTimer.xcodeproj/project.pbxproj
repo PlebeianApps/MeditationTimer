@@ -543,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -551,8 +552,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
-				INSTALL_PATH = entitlements.plist;
+				INSTALL_PATH = /user/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				MODULE_START = user/local/lib;
 				PRODUCT_NAME = MeditationTimer;
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
 			};
 			name = Debug;
@@ -561,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -570,8 +575,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
-				INSTALL_PATH = entitlements.plist;
+				INSTALL_PATH = /user/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				MODULE_START = user/local/lib;
 				PRODUCT_NAME = MeditationTimer;
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20E6E0AA-181C-4544-91DB-5108CD0B879E";
 				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
@@ -583,17 +591,17 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
+				SKIP_INSTALL = YES;
 			};
 			name = "Ad Hoc";
 		};
@@ -602,7 +610,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -612,10 +620,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MeditationTimer_Prefix.pch;
 				INFOPLIST_FILE = "MeditationTimer-Info.plist";
-				INSTALL_PATH = entitlements.plist;
+				INSTALL_PATH = /user/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				MODULE_START = user/local/lib;
 				PRODUCT_NAME = MeditationTimer;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc";
@@ -624,12 +635,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -637,14 +651,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alyssa Reese (69DFVJY62E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "36BACA48-BE69-4B47-AA34-34C492A4E3B8";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

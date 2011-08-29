@@ -13,6 +13,7 @@
 @interface MeditationTimerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     MainViewController *mainViewController;
+    UIImageView * defaultImage;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

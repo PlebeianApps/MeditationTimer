@@ -209,7 +209,6 @@
 			<key>ChosenToolbarItems</key>
 			<array>
 				<string>XCToolbarPerspectiveControl</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>active-combo-popup</string>
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
@@ -231,8 +230,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,6 +270,7 @@
 								<string>6CFC2B9E13DE765800A26034</string>
 								<string>289233A00DB2D0730083E9F9</string>
 								<string>281C6CD70DB2D82200F60ACC</string>
+								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>6C59F22713D92BE90013CD96</string>
@@ -284,13 +282,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>50</integer>
+									<integer>48</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {352, 961}}</string>
+							<string>{{0, 458}, {352, 961}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -318,12 +316,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>6CAAD7D013BC39070045A93D</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimerViewController.m</string>
+								<string>MeditationTimerAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>6CAAD7D113BC39070045A93D</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TimerViewController.m</string>
+										<string>MeditationTimerAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6CF620DC13EADFD40081CFAB</string>
+										<string>6C87D9E513FCC31300EC2F31</string>
 										<key>history</key>
 										<array>
 											<string>6CAAD7D413BC39070045A93D</string>
@@ -348,7 +348,6 @@
 											<string>6C1BAF1213C56CC20057318B</string>
 											<string>6C84104113D1556000CE8735</string>
 											<string>6C84104213D1556000CE8735</string>
-											<string>6C84104513D1556000CE8735</string>
 											<string>6C59F27913D930E10013CD96</string>
 											<string>6C59F27C13D930E10013CD96</string>
 											<string>6C59F27F13D930E10013CD96</string>
@@ -391,7 +390,8 @@
 											<string>6CF6209A13EAD1EC0081CFAB</string>
 											<string>6CF620C413EAD3FE0081CFAB</string>
 											<string>6CF620D713EAD4C30081CFAB</string>
-											<string>6CF620DB13EADFD40081CFAB</string>
+											<string>6C87D9E413FCC31300EC2F31</string>
+											<string>6C84104513D1556000CE8735</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -405,18 +405,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {831, 700}}</string>
+								<string>{{0, 0}, {831, 694}}</string>
 								<key>RubberWindowFrame</key>
 								<string>482 158 1205 1020 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>700pt</string>
+							<string>694pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>274pt</string>
+							<string>280pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -430,7 +430,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {831, 247}}</string>
+										<string>{{10, 27}, {831, 253}}</string>
+										<key>RubberWindowFrame</key>
+										<string>482 158 1205 1020 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -447,8 +449,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {831, 247}}</string>
-										<key>RubberWindowFrame</key>
-										<string>482 158 1205 1020 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -514,11 +514,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6CF6207F13EACE5A0081CFAB</string>
+				<string>6C87D9E613FCC31300EC2F31</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>6CF6208013EACE5A0081CFAB</string>
+				<string>6C87D9E713FCC31300EC2F31</string>
 				<string>6CAAD7D013BC39070045A93D</string>
-				<string>6CF6208113EACE5A0081CFAB</string>
+				<string>6C87D9E813FCC31300EC2F31</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -708,8 +708,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6CF6208F13EAD0400081CFAB</string>
-		<string>6CF6209013EAD0400081CFAB</string>
 		<string>/Users/dclements/workspace/clients/plebs/MeditationTimer/iPhone/MeditationTimer/MeditationTimer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

@@ -19,6 +19,32 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
+
+-(void)setupFade{
+	defaultImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]];
+	defaultImage.frame = CGRectMake(0, 0 , 320 , 480);
+	[window addSubview:defaultImage];	
+	[defaultImage release];	
+	
+	[self performSelector:@selector(fadeDefault) withObject:nil afterDelay:2.0];
+	
+}
+
+-(void)fadeDefault{
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1.0f];
+	[UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(defaultImageViewFaded)];
+	
+	defaultImage.alpha = 0.0f;
+	[UIView commitAnimations];
+}
+
+-(void)defaultImageViewFaded{
+	[defaultImage removeFromSuperview];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.  
@@ -27,6 +53,8 @@
     [self.window addSubview:mainViewController.view];
     [self.window makeKeyAndVisible];
 	
+    
+    [self setupFade];
 	application.idleTimerDisabled = YES;
 
     return YES;

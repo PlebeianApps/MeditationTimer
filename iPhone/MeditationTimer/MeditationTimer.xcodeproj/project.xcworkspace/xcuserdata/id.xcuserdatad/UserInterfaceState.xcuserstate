@@ -2990,7 +2990,7 @@
 			</dict>
 		</dict>
 		<string>file://localhost/Users/id/Personal/Work/DesignJobs/Plebeian/Products/GoldenMind/MeditationTimer/iPhone/MeditationTimer/icons/10@2x.png</string>
-		<real>337687455.08582902</real>
+		<real>337708357.10693699</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3947,7 +3947,7 @@
 				<integer>329</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>337687454.899719</real>
+			<real>337708352.105977</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -3958,7 +3958,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 4:04 AM</string>
+		<string>Today at 9:52 AM</string>
 		<integer>234</integer>
 		<dict>
 			<key>$class</key>
@@ -5087,7 +5087,7 @@
 				<integer>426</integer>
 			</dict>
 		</dict>
-		<real>337687455.08811003</real>
+		<real>337708357.10957301</real>
 		<string>IDEQuickLookEditor.Editor</string>
 		<dict>
 			<key>$class</key>

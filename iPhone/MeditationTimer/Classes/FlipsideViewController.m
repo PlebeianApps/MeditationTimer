@@ -25,12 +25,21 @@
 		secondaryTime.enabled = YES;	
 		mask.hidden = YES;
 		secondaryTimeLabel.textColor = [UIColor whiteColor];
+        
+        if( [secondaryTime.text isEqualToString:@"none"] ){
+            secondaryTime.text = @"1 mintues";
+        }
+        
 	} else if( [type.text isEqual:REPEATING_BELLS] ){
 		secondaryTimeLabel.text = @"bells every";
 		secondaryTime.enabled = YES;	
 		mask.hidden = YES;
 		
 		secondaryTimeLabel.textColor = [UIColor whiteColor];
+        
+        if( [secondaryTime.text isEqualToString:@"none"] ){
+            secondaryTime.text = @"1 mintues";
+        }
 
 	} else {
 		secondaryTime.enabled = NO;	

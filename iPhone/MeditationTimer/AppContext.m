@@ -36,8 +36,19 @@ static AppContext *sharedGContext = nil;
 {
 	NSString * duration = [AppSettings getString:@"secondaryTime"];
 	NSArray * parts = [duration componentsSeparatedByString:@" "];
-	NSString * numberPart = [parts objectAtIndex:0];
-	NSString * unitsPart = [parts objectAtIndex:1];
+    
+    
+    NSString * numberPart;
+    NSString * unitsPart;
+    
+    if( parts.count > 2 ){
+    
+        numberPart = [parts objectAtIndex:0];
+        unitsPart = [parts objectAtIndex:1];
+    } else {
+        numberPart = @"1";
+        unitsPart = @"minutes";
+    }
 	
 	int multiplier = ( [unitsPart isEqual:@"minutes"] ? 60 : 60 * 60 );
 	return (NSTimeInterval)[numberPart floatValue] * multiplier;
